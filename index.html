@@ -4,17 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mazharul Islam | NGO & Microfinance Professional</title>
-
-<meta name="description"
-content="Mazharul Islam - NGO & Microfinance Professional, Branch Management, Microfinance, Team Leadership and Career Profile">
+<title>Mazharul Islam | Professional Profile</title>
 
 <style>
-
 *{
+    box-sizing:border-box;
     margin:0;
     padding:0;
-    box-sizing:border-box;
 }
 
 html{
@@ -23,36 +19,30 @@ html{
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    background:#f4f8fc;
-    color:#17365d;
+    background:#f4f7fb;
+    color:#24384d;
     line-height:1.6;
 }
 
 a{
     text-decoration:none;
-}
-
-img{
-    max-width:100%;
+    color:inherit;
 }
 
 .container{
-    width:94%;
-    max-width:1250px;
+    width:92%;
+    max-width:1200px;
     margin:auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header{
     position:sticky;
     top:0;
-    z-index:1000;
-    background:#06264d;
-    color:white;
-    box-shadow:0 3px 12px rgba(0,0,0,.2);
+    z-index:999;
+    background:#062b55;
+    box-shadow:0 3px 15px rgba(0,0,0,.2);
 }
 
 .navbar{
@@ -60,298 +50,238 @@ header{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:20px;
 }
 
-.brand{
-    display:flex;
-    align-items:center;
-    gap:12px;
+.logo{
     color:white;
-}
-
-.brand-logo{
-    width:46px;
-    height:46px;
-    border-radius:50%;
-    background:linear-gradient(135deg,#1789e8,#0b4e91);
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    font-size:20px;
     font-weight:bold;
-    font-size:18px;
-    border:2px solid white;
 }
 
-.brand-text strong{
+.logo small{
     display:block;
-    font-size:18px;
+    font-size:11px;
+    font-weight:normal;
+    color:#bcd7ef;
 }
 
-.brand-text span{
-    display:block;
-    font-size:12px;
-    color:#d7e8ff;
-}
-
-.nav-links{
+.nav{
     display:flex;
-    align-items:center;
-    gap:4px;
     list-style:none;
 }
 
-.nav-links a{
-    color:white;
-    padding:22px 10px;
-    font-size:14px;
+.nav a{
     display:block;
-    border-bottom:3px solid transparent;
-    transition:.2s;
+    padding:22px 10px;
+    color:white;
+    font-size:13px;
 }
 
-.nav-links a:hover{
-    background:#0d3c72;
-    border-bottom-color:#25a9ff;
+.nav a:hover{
+    background:#0b477f;
 }
 
-.menu-btn{
+.menu{
     display:none;
     background:none;
-    border:1px solid #80b8ec;
+    border:1px solid #9fc5e5;
     color:white;
-    padding:8px 12px;
-    border-radius:6px;
-    cursor:pointer;
+    padding:7px 11px;
+    border-radius:5px;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
-    min-height:355px;
     background:
-    linear-gradient(90deg,rgba(255,255,255,.94),rgba(255,255,255,.78)),
-    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80")
-    center/cover;
-    display:flex;
-    align-items:center;
-    border-bottom:1px solid #d9e5f0;
+    linear-gradient(90deg,rgba(255,255,255,.96),rgba(255,255,255,.82));
+    padding:35px 0;
+    border-bottom:1px solid #d9e4ee;
 }
 
 .hero-grid{
     display:grid;
-    grid-template-columns:320px 1fr 310px;
-    gap:28px;
+    grid-template-columns:270px 1fr 290px;
+    gap:30px;
     align-items:center;
-    padding:28px 0;
 }
 
-.profile-photo{
-    width:290px;
-    height:330px;
+.profile{
+    width:250px;
+    height:300px;
     object-fit:cover;
     object-position:center top;
+    border:5px solid white;
+    box-shadow:0 5px 25px rgba(0,0,0,.2);
     border-radius:8px;
-    box-shadow:0 8px 30px rgba(0,0,0,.25);
-    border:4px solid white;
-    background:#dce8f4;
+    background:#e7eef5;
 }
 
-/*
-  IMPORTANT:
-  আপনার নিজের ছবি ব্যবহার করতে চাইলে
-  একই folder-এ profile.jpg নামে ছবি রাখুন।
-  নিচের src-এ profile.jpg ব্যবহার করা হয়েছে।
-*/
-
-.hero-middle small{
-    font-size:20px;
-    color:#0c4c87;
+.intro small{
+    color:#0878c9;
+    font-size:18px;
 }
 
-.hero-middle h1{
-    font-size:48px;
-    line-height:1.1;
-    margin:4px 0;
-    color:#082d57;
+.intro h1{
+    font-size:45px;
+    line-height:1.15;
+    color:#062e59;
 }
 
-.hero-middle h1 span{
-    color:#086fc7;
+.intro h1 span{
+    color:#087dcc;
 }
 
-.hero-middle h2{
-    font-size:22px;
-    color:#0865b4;
-    margin-bottom:12px;
+.intro h2{
+    color:#1267a7;
+    font-size:21px;
+    margin:8px 0;
 }
 
-.hero-middle p{
-    max-width:650px;
-    color:#263f5c;
-    font-size:16px;
+.intro p{
+    color:#526477;
+    font-size:14px;
 }
 
-.hero-buttons{
+.buttons{
     display:flex;
-    gap:12px;
-    margin-top:20px;
+    gap:10px;
     flex-wrap:wrap;
+    margin-top:18px;
 }
 
 .btn{
-    border:none;
-    border-radius:5px;
-    padding:11px 22px;
-    font-size:15px;
-    font-weight:bold;
-    cursor:pointer;
     display:inline-block;
+    padding:10px 17px;
+    border-radius:5px;
+    font-weight:bold;
+    font-size:13px;
+    border:0;
+    cursor:pointer;
 }
 
-.btn-primary{
+.primary{
     background:#087fe5;
     color:white;
 }
 
-.btn-primary:hover{
-    background:#0567bc;
-}
-
-.btn-outline{
+.secondary{
     border:2px solid #087fe5;
-    color:#0870c9;
+    color:#0871c5;
     background:white;
-}
-
-.btn-outline:hover{
-    background:#087fe5;
-    color:white;
 }
 
 .contact-box{
-    background:rgba(255,255,255,.9);
+    background:white;
     border-radius:8px;
     padding:20px;
-    box-shadow:0 5px 22px rgba(0,0,0,.12);
+    box-shadow:0 4px 18px rgba(0,0,0,.1);
 }
 
-.contact-item{
+.contact-line{
     display:flex;
-    gap:12px;
-    margin-bottom:15px;
+    gap:10px;
+    margin-bottom:13px;
 }
 
-.contact-icon{
-    width:35px;
-    min-width:35px;
-    height:35px;
-    border-radius:50%;
-    background:#0875c9;
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.contact-line:last-child{
+    margin-bottom:0;
 }
 
-.contact-item strong{
+.contact-line b{
     display:block;
-    font-size:13px;
-    color:#07539a;
+    color:#075a9e;
+    font-size:12px;
 }
 
-.contact-item span{
-    font-size:13px;
-    color:#41546b;
-    word-break:break-word;
+.contact-line span{
+    display:block;
+    color:#56697b;
+    font-size:12px;
 }
 
-/* =========================
-   QUICK MENU
-========================= */
+/* QUICK */
 
-.quick-menu{
+.quick{
     background:white;
-    padding:18px 0;
-    border-bottom:1px solid #dbe7f1;
+    padding:15px 0;
+    border-bottom:1px solid #dbe5ee;
 }
 
 .quick-grid{
     display:grid;
-    grid-template-columns:repeat(8,1fr);
-    border:1px solid #dbe7f1;
-    border-radius:7px;
-    overflow:hidden;
+    grid-template-columns:repeat(7,1fr);
 }
 
-.quick-item{
-    padding:13px 7px;
+.quick a{
     text-align:center;
-    border-right:1px solid #e1eaf2;
-    cursor:pointer;
-    background:white;
-    transition:.2s;
+    padding:12px 5px;
+    border-right:1px solid #e2e9ef;
 }
 
-.quick-item:last-child{
-    border-right:none;
-}
-
-.quick-item:hover{
-    background:#f0f8ff;
+.quick a:last-child{
+    border-right:0;
 }
 
 .quick-icon{
-    width:48px;
-    height:48px;
+    width:42px;
+    height:42px;
+    margin:auto auto 5px;
     border-radius:50%;
-    margin:auto auto 7px;
     color:white;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:21px;
+    font-size:19px;
 }
 
-.blue{background:#087fe5;}
-.green{background:#16a96b;}
-.purple{background:#663cc2;}
-.orange{background:#f59c17;}
-.red{background:#ed353d;}
-.teal{background:#079da1;}
+.i1{background:#087fe5}
+.i2{background:#18a96b}
+.i3{background:#6940c5}
+.i4{background:#e88c12}
+.i5{background:#e33c45}
+.i6{background:#008f98}
+.i7{background:#5267d9}
 
-.quick-item strong{
-    font-size:13px;
+.quick strong{
+    font-size:12px;
 }
 
-/* =========================
-   SECTION
-========================= */
+/* SECTION */
 
 section{
-    padding:32px 0;
+    padding:35px 0;
 }
 
-.section-title{
+.title{
     text-align:center;
     margin-bottom:22px;
 }
 
-.section-title h2{
-    font-size:28px;
-    color:#082f5c;
+.title h2{
+    color:#073663;
+    font-size:27px;
 }
 
-.section-title p{
-    color:#68798b;
-    font-size:14px;
+.title p{
+    color:#758494;
+    font-size:13px;
 }
 
-/* =========================
-   ABOUT
-========================= */
+.card{
+    background:white;
+    border:1px solid #dce6ef;
+    border-radius:7px;
+    padding:22px;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+}
+
+.card h3{
+    color:#073d75;
+    margin-bottom:12px;
+}
+
+/* ABOUT */
 
 .about-grid{
     display:grid;
@@ -359,256 +289,229 @@ section{
     gap:20px;
 }
 
-.card{
-    background:white;
-    border:1px solid #dce7f0;
-    border-radius:7px;
-    padding:23px;
-    box-shadow:0 3px 12px rgba(20,60,100,.06);
-}
-
-.card h3{
-    color:#073d75;
-    margin-bottom:13px;
-    font-size:20px;
-}
-
-.card p{
-    color:#44596e;
+.about-text p{
     font-size:14px;
+    color:#506274;
+    margin-bottom:12px;
 }
 
-.info-list{
+.info{
     list-style:none;
 }
 
-.info-list li{
-    display:flex;
-    gap:10px;
+.info li{
     padding:8px 0;
-    border-bottom:1px solid #edf2f6;
-    font-size:14px;
+    border-bottom:1px solid #edf1f5;
+    font-size:13px;
 }
 
-.info-list li:last-child{
-    border-bottom:none;
+.info b{
+    color:#07589e;
+    display:inline-block;
+    width:135px;
 }
 
-.info-list b{
-    min-width:125px;
-    color:#0756a0;
-}
-
-/* =========================
-   EXPERIENCE
-========================= */
+/* EXPERIENCE */
 
 .timeline{
-    position:relative;
-    max-width:1000px;
+    max-width:950px;
     margin:auto;
+    position:relative;
 }
 
 .timeline:before{
     content:"";
     position:absolute;
-    left:18px;
+    left:16px;
     top:0;
     bottom:0;
     width:3px;
-    background:#1684d9;
+    background:#087fe5;
 }
 
-.timeline-item{
+.exp{
     position:relative;
-    padding-left:55px;
-    margin-bottom:22px;
+    padding-left:50px;
+    margin-bottom:20px;
 }
 
-.timeline-dot{
+.dot{
     position:absolute;
-    left:7px;
-    top:22px;
+    left:5px;
+    top:20px;
     width:25px;
     height:25px;
-    border-radius:50%;
     background:#087fe5;
-    border:5px solid #dcefff;
+    border:5px solid #d9efff;
+    border-radius:50%;
 }
 
-.timeline-card{
+.exp-card{
     background:white;
     border-left:5px solid #087fe5;
-    padding:18px 20px;
     border-radius:6px;
-    box-shadow:0 3px 13px rgba(0,0,0,.07);
+    padding:18px;
+    box-shadow:0 3px 12px rgba(0,0,0,.06);
 }
 
-.timeline-card h3{
-    color:#073d75;
-    margin-bottom:3px;
+.exp-card h3{
+    color:#073b70;
 }
 
-.timeline-card .company{
+.company{
     color:#0877c9;
     font-weight:bold;
+    font-size:14px;
 }
 
-.timeline-card .date{
+.date{
     display:inline-block;
-    background:#e8f4ff;
-    color:#0866ad;
+    margin:7px 0;
     padding:3px 9px;
     border-radius:20px;
+    background:#e9f5ff;
+    color:#086ab0;
     font-size:12px;
-    margin:7px 0;
 }
 
-.timeline-card ul{
-    padding-left:20px;
-    color:#4d6074;
-    font-size:14px;
+.exp-card p{
+    color:#55687a;
+    font-size:13px;
 }
 
-/* =========================
-   EDUCATION
-========================= */
+.exp-card ul{
+    margin-left:20px;
+    color:#536677;
+    font-size:13px;
+}
 
-.education-grid{
+/* EDUCATION */
+
+.education{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
 }
 
-.edu-card{
+.edu{
     background:white;
-    border-radius:7px;
-    border:1px solid #dce7f0;
-    padding:20px;
-    box-shadow:0 3px 12px rgba(0,0,0,.05);
     border-top:4px solid #087fe5;
+    border-radius:7px;
+    padding:20px;
+    box-shadow:0 3px 12px rgba(0,0,0,.06);
 }
 
-.edu-card h3{
+.edu h3{
     color:#073d75;
-    margin-bottom:7px;
+    font-size:17px;
+    margin-bottom:9px;
 }
 
-.edu-card p{
-    color:#53677b;
+.edu p{
+    font-size:13px;
+    color:#56697a;
+    margin:3px 0;
+}
+
+.edu strong{
+    color:#075b9e;
+}
+
+/* ADDITIONAL */
+
+.additional{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.additional .card{
+    border-top:4px solid #16a56b;
+}
+
+.additional li{
+    margin-left:20px;
+    color:#536677;
     font-size:14px;
+    margin-bottom:6px;
 }
 
-.edu-badge{
-    display:inline-block;
-    margin-top:10px;
-    background:#eef7ff;
-    color:#0871c4;
-    padding:5px 10px;
-    border-radius:20px;
-    font-size:12px;
-}
+/* SKILLS */
 
-/* =========================
-   SKILLS
-========================= */
-
-.skills-grid{
+.skills{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:20px;
 }
 
 .skill{
-    margin-bottom:17px;
+    margin-bottom:16px;
 }
 
 .skill-top{
     display:flex;
     justify-content:space-between;
-    font-size:14px;
+    font-size:13px;
     font-weight:bold;
     margin-bottom:5px;
 }
 
-.skill-bar{
-    height:10px;
-    background:#e4edf5;
-    border-radius:10px;
+.bar{
+    height:9px;
+    background:#e4ebf2;
+    border-radius:20px;
     overflow:hidden;
 }
 
-.skill-fill{
+.fill{
     height:100%;
-    border-radius:10px;
     background:#087fe5;
 }
 
-/* =========================
-   TRAINING
-========================= */
+/* CV */
 
-.training-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-}
-
-.training-card{
-    background:white;
-    border:1px solid #dce7f0;
-    border-radius:7px;
-    padding:20px;
+.cv-box{
+    background:linear-gradient(135deg,#073a70,#087fbd);
+    color:white;
+    border-radius:8px;
+    padding:28px;
     text-align:center;
 }
 
-.training-card .big-icon{
-    font-size:35px;
-    margin-bottom:10px;
+.cv-box h2{
+    margin-bottom:6px;
 }
 
-.training-card h3{
-    font-size:17px;
-    color:#073d75;
-}
-
-.training-card p{
-    color:#657689;
+.cv-box p{
+    color:#e2f2ff;
     font-size:13px;
+    margin-bottom:15px;
 }
 
-/* =========================
-   JOBS
-========================= */
-
-.jobs-section{
-    background:linear-gradient(135deg,#f0fff8,#f3fbff);
+.cv-box .btn{
+    background:white;
+    color:#075e9d;
 }
 
-.jobs-head{
+/* JOBS */
+
+.jobs{
+    background:#eef8f4;
+}
+
+.job-tools{
     display:flex;
     justify-content:space-between;
-    align-items:center;
-    gap:15px;
+    gap:10px;
     margin-bottom:18px;
     flex-wrap:wrap;
 }
 
-.jobs-head h2{
-    color:#063d70;
-}
-
-.jobs-actions{
-    display:flex;
-    gap:8px;
-    flex-wrap:wrap;
-}
-
-.job-search{
-    padding:11px 14px;
-    border:1px solid #cbdbe9;
+.search{
+    padding:10px 13px;
+    border:1px solid #cbdbe6;
     border-radius:5px;
-    min-width:230px;
+    min-width:250px;
 }
 
 .jobs-grid{
@@ -617,101 +520,41 @@ section{
     gap:15px;
 }
 
-.job-card{
+.job{
     background:white;
-    border:1px solid #dbe6ee;
-    border-radius:7px;
     padding:18px;
-    box-shadow:0 2px 10px rgba(0,0,0,.05);
+    border-radius:7px;
+    border:1px solid #dbe7e1;
 }
 
-.job-card h3{
+.job h3{
     color:#073d75;
-    font-size:17px;
-    margin-bottom:5px;
+    font-size:16px;
 }
 
 .job-org{
-    color:#087bca;
+    color:#0879c9;
     font-weight:bold;
-    font-size:14px;
-}
-
-.job-meta{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:7px;
-    margin:12px 0;
     font-size:13px;
-    color:#5c6e7f;
 }
 
-.deadline{
-    color:#c53c26;
-    font-weight:bold;
+.job-info{
+    color:#5b6d7d;
+    font-size:12px;
+    margin:10px 0;
 }
 
-.job-footer{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:8px;
-}
-
-.apply-btn{
+.apply{
+    display:inline-block;
     background:#087fe5;
     color:white;
-    padding:8px 14px;
+    padding:7px 13px;
     border-radius:5px;
-    font-size:13px;
+    font-size:12px;
     font-weight:bold;
 }
 
-.apply-btn:hover{
-    background:#075fae;
-}
-
-.live-note{
-    margin-top:18px;
-    background:#fff;
-    border-left:4px solid #16a96b;
-    padding:14px;
-    color:#516576;
-    font-size:13px;
-}
-
-/* =========================
-   GALLERY
-========================= */
-
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-}
-
-.gallery-box{
-    height:190px;
-    background:#eaf2f8;
-    border-radius:7px;
-    overflow:hidden;
-    border:1px solid #d9e4ed;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#52708c;
-    text-align:center;
-}
-
-.gallery-box img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact-grid{
     display:grid;
@@ -721,376 +564,199 @@ section{
 
 .contact-form{
     display:grid;
-    gap:12px;
+    gap:10px;
 }
 
 .contact-form input,
 .contact-form textarea{
-    width:100%;
-    padding:12px;
-    border:1px solid #ccdce9;
+    padding:11px;
+    border:1px solid #ccdbe7;
     border-radius:5px;
     font-family:inherit;
 }
 
 .contact-form textarea{
-    min-height:140px;
-    resize:vertical;
+    min-height:130px;
 }
 
-/* =========================
-   CAREER GOAL
-========================= */
-
-.goal{
-    background:linear-gradient(90deg,#07376b,#008b61);
-    color:white;
-    border-radius:7px;
-    padding:20px 25px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-}
-
-.goal h3{
-    margin-bottom:3px;
-}
-
-.goal p{
-    font-size:13px;
-    color:#e8fff7;
-}
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
-    background:#06264d;
+    background:#062b55;
     color:white;
-    padding:24px 0;
-    margin-top:20px;
-}
-
-.footer-grid{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-}
-
-.footer-name strong{
-    display:block;
-}
-
-.footer-name span{
-    font-size:12px;
-    color:#bdd5ed;
-}
-
-.footer-nav{
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.footer-nav a{
-    color:#dcecff;
-    font-size:12px;
-}
-
-.copyright{
+    padding:25px 0;
     text-align:center;
-    border-top:1px solid rgba(255,255,255,.15);
-    margin-top:18px;
-    padding-top:15px;
+}
+
+footer p{
+    color:#bfd4e8;
     font-size:12px;
-    color:#bdd0e5;
 }
 
-/* =========================
-   MODAL
-========================= */
-
-.modal{
-    display:none;
-    position:fixed;
-    z-index:3000;
-    inset:0;
-    background:rgba(0,0,0,.65);
-    padding:20px;
-    overflow:auto;
-}
-
-.modal.show{
+.social{
+    margin:12px 0;
     display:flex;
-    align-items:center;
     justify-content:center;
+    gap:8px;
+    flex-wrap:wrap;
 }
 
-.modal-box{
-    background:white;
-    width:100%;
-    max-width:850px;
-    max-height:90vh;
-    overflow:auto;
-    border-radius:8px;
-    box-shadow:0 10px 40px rgba(0,0,0,.3);
+.social a{
+    padding:7px 13px;
+    background:#0c4679;
+    border-radius:5px;
+    font-size:12px;
 }
 
-.modal-head{
-    background:#062f5d;
-    color:white;
-    padding:17px 20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:sticky;
-    top:0;
-}
-
-.modal-head button{
-    background:none;
-    border:none;
-    color:white;
-    font-size:25px;
-    cursor:pointer;
-}
-
-.modal-body{
-    padding:25px;
-}
-
-.modal-body h3{
-    color:#073d75;
-    margin:15px 0 7px;
-}
-
-.modal-body p,
-.modal-body li{
-    color:#4f6275;
-    font-size:14px;
-}
-
-.modal-body ul{
-    padding-left:20px;
-}
-
-/* =========================
-   MOBILE
-========================= */
+/* RESPONSIVE */
 
 @media(max-width:1000px){
 
-    .nav-links{
+    .nav{
         display:none;
         position:absolute;
         top:65px;
         left:0;
         right:0;
-        background:#06264d;
+        background:#062b55;
         flex-direction:column;
-        align-items:stretch;
-        padding:8px;
     }
 
-    .nav-links.show{
+    .nav.show{
         display:flex;
     }
 
-    .nav-links a{
-        padding:12px 15px;
+    .nav a{
+        padding:12px 18px;
     }
 
-    .menu-btn{
+    .menu{
         display:block;
     }
 
     .hero-grid{
-        grid-template-columns:240px 1fr;
+        grid-template-columns:230px 1fr;
     }
 
     .contact-box{
         grid-column:1/-1;
     }
 
-    .profile-photo{
-        width:230px;
-        height:280px;
-    }
-
-    .hero-middle h1{
-        font-size:38px;
-    }
-
     .quick-grid{
         grid-template-columns:repeat(4,1fr);
     }
 
-    .gallery-grid{
-        grid-template-columns:repeat(2,1fr);
+    .education{
+        grid-template-columns:1fr 1fr;
     }
-
 }
 
 @media(max-width:700px){
 
-    .container{
-        width:92%;
+    .hero-grid,
+    .about-grid,
+    .skills,
+    .contact-grid,
+    .additional,
+    .jobs-grid{
+        grid-template-columns:1fr;
     }
 
     .hero{
-        min-height:auto;
-    }
-
-    .hero-grid{
-        grid-template-columns:1fr;
         text-align:center;
     }
 
-    .profile-photo{
-        width:230px;
-        height:280px;
+    .profile{
         margin:auto;
+        width:220px;
+        height:270px;
     }
 
-    .hero-middle h1{
-        font-size:34px;
+    .intro h1{
+        font-size:35px;
     }
 
-    .hero-middle h2{
-        font-size:18px;
-    }
-
-    .hero-buttons{
+    .buttons{
         justify-content:center;
-    }
-
-    .contact-box{
-        text-align:left;
     }
 
     .quick-grid{
         grid-template-columns:repeat(2,1fr);
     }
 
-    .about-grid,
-    .education-grid,
-    .skills-grid,
-    .contact-grid,
-    .jobs-grid{
+    .education{
         grid-template-columns:1fr;
     }
 
-    .training-grid{
-        grid-template-columns:1fr;
+    .quick a{
+        border-bottom:1px solid #e2e9ef;
     }
-
-    .gallery-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .goal{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
-    .footer-grid{
-        flex-direction:column;
-        text-align:center;
-    }
-
 }
-
 </style>
 </head>
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header>
-
 <div class="container navbar">
 
-<a href="#home" class="brand">
-
-<div class="brand-logo">
-MI
-</div>
-
-<div class="brand-text">
-<strong>Mazharul Islam</strong>
-<span>NGO & Microfinance Professional</span>
-</div>
-
+<a href="#home" class="logo">
+Mazharul Islam
+<small>Professional Profile</small>
 </a>
 
-<button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+<button class="menu" onclick="toggleMenu()">☰ Menu</button>
 
-<ul class="nav-links" id="navLinks">
-
-<li><a href="#home">⌂ Home</a></li>
-<li><a href="#about">👤 About Me</a></li>
-<li><a href="#experience">💼 Experience</a></li>
-<li><a href="#education">🎓 Education</a></li>
-<li><a href="#skills">⚙ Skills</a></li>
-<li><a href="#jobs">💼 Job Opportunities</a></li>
-<li><a href="#gallery">▣ Gallery</a></li>
-<li><a href="#contact">✉ Contact</a></li>
-
+<ul class="nav" id="nav">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Me</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#additional">Additional Qualification</a></li>
+<li><a href="#cv">My CV</a></li>
+<li><a href="#jobs">Job Opportunities</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 
 </div>
-
 </header>
 
 
-<!-- =========================
-     HOME
-========================= -->
+<!-- HOME -->
 
 <section class="hero" id="home">
 
 <div class="container hero-grid">
 
 <div>
-
-<img src="profile.jpg"
-     alt="Mazharul Islam"
-     class="profile-photo"
-     onerror="this.style.display='none';">
-
+<img
+src="profile.jpg"
+class="profile"
+alt="Mazharul Islam"
+onerror="this.alt='Mazharul Islam';">
 </div>
 
-<div class="hero-middle">
+<div class="intro">
 
 <small>Hello, I'm</small>
 
 <h1>Mazharul <span>Islam</span></h1>
 
-<h2>NGO & Microfinance Professional</h2>
+<h2>NGO Sector Professional</h2>
 
 <p>
-A highly committed, result-oriented and dedicated professional
-with extensive experience in the NGO and microfinance sector.
-Seeking a professional opportunity where I can use my experience,
-leadership and operational skills effectively.
+A highly committed, result-oriented & dedicated professional
+with 12 years of proven experience in the NGO sector.
 </p>
 
-<div class="hero-buttons">
+<div class="buttons">
 
-<button class="btn btn-primary"
-onclick="downloadCV()">
-⬇ Download CV
-</button>
+<a href="#cv" class="btn primary">
+Download My CV
+</a>
 
-<a href="#contact" class="btn btn-outline">
-✉ Contact Me
+<a href="#contact" class="btn secondary">
+Contact Me
 </a>
 
 </div>
@@ -1100,188 +766,133 @@ onclick="downloadCV()">
 
 <div class="contact-box">
 
-<div class="contact-item">
-
-<div class="contact-icon">📍</div>
-
+<div class="contact-line">
+<div>📍</div>
 <div>
-<strong>Location</strong>
+<b>Address</b>
 <span>Noakhali, Bangladesh</span>
 </div>
-
 </div>
 
-
-<div class="contact-item">
-
-<div class="contact-icon">💼</div>
-
+<div class="contact-line">
+<div>☎</div>
 <div>
-<strong>Experience</strong>
-<span>12+ Years</span>
+<b>Mobile</b>
+<span>01619-023024</span>
+<span>01921-423009</span>
+</div>
 </div>
 
-</div>
-
-
-<div class="contact-item">
-
-<div class="contact-icon">✉</div>
-
+<div class="contact-line">
+<div>✉</div>
 <div>
-<strong>Email</strong>
+<b>Email</b>
 <span>mazharul17051991@gmail.com</span>
 </div>
-
 </div>
 
-
-<div class="contact-item">
-
-<div class="contact-icon">☎</div>
-
+<div class="contact-line">
+<div>💼</div>
 <div>
-<strong>Phone</strong>
-<span>01619-023024, 01921-423009</span>
+<b>Experience</b>
+<span>12 Years NGO Sector</span>
+</div>
 </div>
 
 </div>
 
 </div>
-
-</div>
-
 </section>
 
 
-<!-- =========================
-     QUICK MENU
-========================= -->
+<!-- QUICK MENU -->
 
-<div class="quick-menu">
+<div class="quick">
 
 <div class="container quick-grid">
 
-<a href="#about" class="quick-item">
-
-<div class="quick-icon blue">👤</div>
-
+<a href="#about">
+<div class="quick-icon i1">👤</div>
 <strong>About Me</strong>
-
 </a>
 
-
-<a href="#experience" class="quick-item">
-
-<div class="quick-icon green">💼</div>
-
+<a href="#experience">
+<div class="quick-icon i2">💼</div>
 <strong>Experience</strong>
-
 </a>
 
-
-<a href="#education" class="quick-item">
-
-<div class="quick-icon purple">🎓</div>
-
-<strong>Education</strong>
-
+<a href="#education">
+<div class="quick-icon i3">🎓</div>
+<strong>Academic Qualification</strong>
 </a>
 
-
-<a href="#training" class="quick-item">
-
-<div class="quick-icon orange">📖</div>
-
-<strong>Training & Certificate</strong>
-
+<a href="#additional">
+<div class="quick-icon i4">📚</div>
+<strong>Additional Qualification</strong>
 </a>
 
-
-<a href="#skills" class="quick-item">
-
-<div class="quick-icon teal">⚙</div>
-
-<strong>Skills</strong>
-
+<a href="#skills">
+<div class="quick-icon i5">⚙</div>
+<strong>Computer Skills</strong>
 </a>
 
-
-<a href="#jobs" class="quick-item">
-
-<div class="quick-icon red">🔎</div>
-
-<strong>Job Opportunities</strong>
-
+<a href="#cv">
+<div class="quick-icon i6">📄</div>
+<strong>My CV</strong>
 </a>
 
-
-<a href="#gallery" class="quick-item">
-
-<div class="quick-icon purple">▣</div>
-
-<strong>Gallery</strong>
-
-</a>
-
-
-<a href="#contact" class="quick-item">
-
-<div class="quick-icon blue">✉</div>
-
-<strong>Contact</strong>
-
+<a href="#jobs">
+<div class="quick-icon i7">🔎</div>
+<strong>Jobs</strong>
 </a>
 
 </div>
-
 </div>
 
 
-<!-- =========================
-     ABOUT
-========================= -->
+<!-- ABOUT -->
 
 <section id="about">
 
 <div class="container">
 
-<div class="section-title">
-
+<div class="title">
 <h2>About Me</h2>
-
 <p>Professional Profile</p>
-
 </div>
-
 
 <div class="about-grid">
 
-<div class="card">
+<div class="card about-text">
 
-<h3>Professional Summary</h3>
+<h3>Career Objective</h3>
 
 <p>
-I am a dedicated and motivated NGO & Microfinance professional
-with extensive experience in branch management, microfinance
-operations, team leadership, field operations, client service
-and organizational development.
+A highly committed, result-oriented, sound-minded & dedicated
+professional with 12 years of proven experience in the NGO
+sector seeking an NGO job position in a dynamic organization
+that needs an expert who can efficiently and effectively
+handle various banking needs.
 </p>
 
-<br>
+<h3>Professional Profile</h3>
 
 <p>
-I have experience working in challenging field environments,
-managing teams, monitoring operational activities, maintaining
-records and ensuring organizational policies and procedures
-are properly followed.
+Culturally sensitive and experienced leader with highly
+developed communication skills, written, verbal, and
+presentational.
 </p>
 
-<br>
+<p>
+Adept at strategically identifying, developing, and
+implementing customized solutions to support global business
+strategies and needs.
+</p>
 
 <p>
-My professional goal is to contribute my knowledge, experience,
-leadership and operational skills to a progressive organization.
+Excellent in strategic planning with comprehensive knowledge
+of business engagement, organizational development, and
+team building.
 </p>
 
 </div>
@@ -1291,31 +902,37 @@ leadership and operational skills to a progressive organization.
 
 <h3>Personal Information</h3>
 
-<ul class="info-list">
+<ul class="info">
 
 <li>
 <b>Name</b>
-<span>Mazharul Islam</span>
+Mazharul Islam
 </li>
 
 <li>
-<b>Profession</b>
-<span>NGO & Microfinance Professional</span>
+<b>Date of Birth</b>
+17 May 1991
 </li>
 
 <li>
-<b>Experience</b>
-<span>12+ Years</span>
+<b>Sex</b>
+Male
 </li>
 
 <li>
-<b>Location</b>
-<span>Noakhali, Bangladesh</span>
+<b>Marital Status</b>
+Married
 </li>
 
 <li>
-<b>Sector</b>
-<span>NGO / Microfinance / Development</span>
+<b>Blood Group</b>
+B(+)
+</li>
+
+<li>
+<b>Permanent Address</b>
+C/O: Suruj Mamber Bari (Miyer Pol), Vill: Hajipur,
+P.O: Chowumhani, P.S: Begumgonj, Dist: Noakhali
 </li>
 
 </ul>
@@ -1323,327 +940,328 @@ leadership and operational skills to a progressive organization.
 </div>
 
 </div>
-
 </div>
-
 </section>
 
 
-<!-- =========================
-     EXPERIENCE
-========================= -->
+<!-- EXPERIENCE -->
 
 <section id="experience">
 
 <div class="container">
 
-<div class="section-title">
-
+<div class="title">
 <h2>Professional Experience</h2>
-
-<p>Career Experience & Responsibilities</p>
-
+<p>Employment History</p>
 </div>
 
 
 <div class="timeline">
 
 
-<div class="timeline-item">
+<!-- BASTOB -->
 
-<div class="timeline-dot"></div>
+<div class="exp">
 
-<div class="timeline-card">
+<div class="dot"></div>
+
+<div class="exp-card">
 
 <h3>Branch Manager</h3>
 
 <div class="company">
-NGO / Microfinance Sector
+BASTOB (NGO) — Shantirhat Branch
 </div>
 
 <div class="date">
-Professional Experience
+22-11-2025 To Till
 </div>
 
+<p>
+Working Area: Patiya Upazila<br>
+Department: MFP (Microfinance Program)
+</p>
+
 <ul>
-
-<li>Managed overall branch operations and administrative activities.</li>
-
-<li>Supervised field staff and ensured proper task distribution.</li>
-
-<li>Monitored loan disbursement, collection and recovery activities.</li>
-
-<li>Prepared branch reports and maintained operational records.</li>
-
-<li>Worked with clients and community-level stakeholders.</li>
-
-<li>Ensured organizational policies and procedures were followed.</li>
-
+<li>Branch Operations Management</li>
+<li>Team Leadership & Supervision</li>
+<li>Loan Portfolio Management</li>
+<li>Client Relationship & Community Engagement</li>
+<li>Business Growth & Development</li>
+<li>Compliance & Risk Management</li>
+<li>Reporting & Communication</li>
 </ul>
 
 </div>
-
 </div>
 
 
-<div class="timeline-item">
+<!-- UDDIPAN MANAGER -->
 
-<div class="timeline-dot"></div>
+<div class="exp">
 
-<div class="timeline-card">
+<div class="dot"></div>
 
-<h3>First Credit Officer</h3>
+<div class="exp-card">
+
+<h3>Branch Manager</h3>
 
 <div class="company">
-NGO / Microfinance Sector
+UDDIPAN (NGO) — Hajigonj-01
 </div>
 
 <div class="date">
-Professional Experience
+01-06-2021 To 31-07-2025
 </div>
 
+<p>
+Working Area: Hajigonj Upazila<br>
+Previous Working Area: Shahrasti 01 & 02,
+Kachua 01 & 02, Chitoshi Branch, UDDIPAN<br>
+Department: MFP (Microfinance Program)
+</p>
+
 <ul>
-
-<li>Managed credit-related field activities.</li>
-
-<li>Conducted client visits and verification.</li>
-
-<li>Supported loan processing and documentation.</li>
-
-<li>Monitored repayment and collection activities.</li>
-
-<li>Maintained client records and reports.</li>
-
+<li>Branch Operations Management</li>
+<li>Team Leadership & Supervision</li>
+<li>Loan Portfolio Management</li>
+<li>Client Relationship & Community Engagement</li>
+<li>Business Growth & Development</li>
+<li>Compliance & Risk Management</li>
+<li>Reporting & Communication</li>
 </ul>
 
 </div>
-
 </div>
 
 
-<div class="timeline-item">
+<!-- FCO -->
 
-<div class="timeline-dot"></div>
+<div class="exp">
 
-<div class="timeline-card">
+<div class="dot"></div>
 
-<h3>NGO & Microfinance Operations</h3>
+<div class="exp-card">
+
+<h3>FCO (First Credit Officer)</h3>
 
 <div class="company">
-Field & Branch Operations
+UDDIPAN (NGO) — Porsuram Branch
 </div>
 
 <div class="date">
-12+ Years Professional Experience
+05-11-2014 To 31-05-2016
 </div>
 
+<p>
+Working Area: Porsuram Upazila<br>
+Department: MFP (Microfinance Program)
+</p>
+
 <ul>
-
-<li>Team management and staff supervision.</li>
-
-<li>Field-level monitoring and reporting.</li>
-
-<li>Community communication and client management.</li>
-
-<li>Branch administration and operational support.</li>
-
+<li>Client Identification and Group Formation</li>
+<li>Loan Processing and Disbursement</li>
+<li>Loan Monitoring and Recovery</li>
+<li>Client Relationship Management</li>
+<li>Reporting and Documentation</li>
+<li>Target Achievement</li>
 </ul>
 
 </div>
+</div>
 
+
+<!-- DELTA -->
+
+<div class="exp">
+
+<div class="dot"></div>
+
+<div class="exp-card">
+
+<h3>Branch Accounts</h3>
+
+<div class="company">
+Delta Life Insurance Company Limited
+(Gono-Gramin) Bima Division — Maijdee Court Branch
+</div>
+
+<div class="date">
+04-01-2011 To 30-10-2014
+</div>
+
+<p>
+Working Area: Noakhali Sadar<br>
+Department: Accounts
+</p>
+
+<ul>
+<li>Financial Record Keeping</li>
+<li>Premium Collection and Accounting</li>
+<li>Claims Accounting</li>
+<li>Financial Reporting and Analysis</li>
+<li>Reporting & Communication</li>
+</ul>
+
+</div>
 </div>
 
 </div>
-
 </div>
-
 </section>
 
 
-<!-- =========================
-     ACADEMIC QUALIFICATION
-========================= -->
+<!-- EDUCATION -->
 
 <section id="education">
 
 <div class="container">
 
-<div class="section-title">
-
+<div class="title">
 <h2>Academic Qualification</h2>
-
 <p>Educational Background</p>
+</div>
+
+<div class="education">
+
+
+<div class="edu">
+
+<h3>Bachelor of Business Studies (Degree)</h3>
+
+<p><strong>University:</strong> National University</p>
+
+<p><strong>Institution:</strong> Noakhali Govt. Collage</p>
+
+<p><strong>Subject:</strong> Accounting</p>
+
+<p><strong>Year:</strong> 2011</p>
+
+<p><strong>Session:</strong> 2009-2010</p>
+
+<p><strong>Result:</strong> 2nd Division</p>
 
 </div>
 
 
-<div class="education-grid">
+<div class="edu">
 
+<h3>Higher Secondary Certificate (H.S.C)</h3>
 
-<div class="edu-card">
+<p><strong>Institution:</strong> Sonapur Degree Collage</p>
 
-<h3>Academic Qualification</h3>
+<p><strong>Subject / Group:</strong> Business Studies</p>
 
-<p>
-Educational information can be maintained here with degree,
-institution, passing year and result.
-</p>
+<p><strong>Year:</strong> 2008</p>
 
-<span class="edu-badge">
-Academic Information
-</span>
+<p><strong>Board:</strong> Cumilla</p>
+
+<p><strong>Result:</strong> GPA - 4.00 (Out of 5)</p>
 
 </div>
 
 
-<div class="edu-card">
+<div class="edu">
 
-<h3>Professional Education</h3>
+<h3>Secondary Certificate (S.S.C)</h3>
 
-<p>
-Relevant academic and professional educational information
-can be displayed in this section.
-</p>
+<p><strong>Institution:</strong> Brother Andre High School</p>
 
-<span class="edu-badge">
-Professional Development
-</span>
+<p><strong>Subject / Group:</strong> Business Studies</p>
 
-</div>
+<p><strong>Year:</strong> 2006</p>
+
+<p><strong>Board:</strong> Cumilla</p>
+
+<p><strong>Result:</strong> GPA - 3.88 (Out of 5)</p>
 
 </div>
 
 </div>
 
+</div>
 </section>
 
 
-<!-- =========================
-     ADDITIONAL QUALIFICATION
-========================= -->
+<!-- ADDITIONAL QUALIFICATION -->
 
-<section id="training">
+<section id="additional">
 
 <div class="container">
 
-<div class="section-title">
+<div class="title">
 
 <h2>Additional Qualification</h2>
 
-<p>Training, Certification & Professional Development</p>
+<p>Computer & Professional Skills</p>
 
 </div>
 
 
-<div class="training-grid">
+<div class="additional">
 
 
-<div class="training-card">
+<div class="card">
 
-<div class="big-icon">📊</div>
+<h3>Computer Office Program</h3>
 
-<h3>MS Excel</h3>
+<ul>
 
-<p>
-Spreadsheet, reporting and data management skills.
-</p>
+<li>MS Word</li>
+<li>MS Excel</li>
+<li>MS PowerPoint</li>
+<li>Internet Browsing</li>
+<li>Graphic Desing</li>
 
-</div>
-
-
-<div class="training-card">
-
-<div class="big-icon">📝</div>
-
-<h3>MS Word</h3>
-
-<p>
-Professional documentation and report preparation.
-</p>
+</ul>
 
 </div>
 
 
-<div class="training-card">
+<div class="card">
 
-<div class="big-icon">📽</div>
+<h3>Professional Strengths</h3>
 
-<h3>MS PowerPoint</h3>
+<ul>
 
-<p>
-Presentation preparation and professional communication.
-</p>
+<li>Critical Thinking</li>
+<li>Decision-making</li>
+<li>Problem-solving skills</li>
+<li>Planning & organizing abilities</li>
+<li>Creative, insightful & innovative</li>
+<li>Emotional intelligence</li>
+<li>Honest, sincere and punctual in work</li>
+<li>Time Management at Work</li>
 
-</div>
-
-
-<div class="training-card">
-
-<div class="big-icon">🌐</div>
-
-<h3>Internet & Digital Skills</h3>
-
-<p>
-Internet browsing, online research and digital communication.
-</p>
-
-</div>
-
-
-<div class="training-card">
-
-<div class="big-icon">🎨</div>
-
-<h3>Graphic Design</h3>
-
-<p>
-Basic graphic design and digital content creation skills.
-</p>
-
-</div>
-
-
-<div class="training-card">
-
-<div class="big-icon">👥</div>
-
-<h3>Team Leadership</h3>
-
-<p>
-Team supervision, coordination and field management.
-</p>
+</ul>
 
 </div>
 
 </div>
 
 </div>
-
 </section>
 
 
-<!-- =========================
-     SKILLS
-========================= -->
+<!-- SKILLS -->
 
 <section id="skills">
 
 <div class="container">
 
-<div class="section-title">
+<div class="title">
 
-<h2>My Skills</h2>
+<h2>Computer Skills</h2>
 
-<p>Professional & Technical Skills</p>
+<p>Skills listed in the CV</p>
 
 </div>
 
 
-<div class="skills-grid">
+<div class="skills">
 
 
 <div class="card">
-
 
 <div class="skill">
 
@@ -1652,8 +1270,8 @@ Team supervision, coordination and field management.
 <span>90%</span>
 </div>
 
-<div class="skill-bar">
-<div class="skill-fill" style="width:90%"></div>
+<div class="bar">
+<div class="fill" style="width:90%"></div>
 </div>
 
 </div>
@@ -1663,25 +1281,11 @@ Team supervision, coordination and field management.
 
 <div class="skill-top">
 <span>MS Excel</span>
-<span>85%</span>
+<span>90%</span>
 </div>
 
-<div class="skill-bar">
-<div class="skill-fill" style="width:85%"></div>
-</div>
-
-</div>
-
-
-<div class="skill">
-
-<div class="skill-top">
-<span>MS PowerPoint</span>
-<span>80%</span>
-</div>
-
-<div class="skill-bar">
-<div class="skill-fill" style="width:80%"></div>
+<div class="bar">
+<div class="fill" style="width:90%"></div>
 </div>
 
 </div>
@@ -1691,6 +1295,19 @@ Team supervision, coordination and field management.
 
 <div class="card">
 
+<div class="skill">
+
+<div class="skill-top">
+<span>MS PowerPoint</span>
+<span>85%</span>
+</div>
+
+<div class="bar">
+<div class="fill" style="width:85%"></div>
+</div>
+
+</div>
+
 
 <div class="skill">
 
@@ -1699,36 +1316,8 @@ Team supervision, coordination and field management.
 <span>90%</span>
 </div>
 
-<div class="skill-bar">
-<div class="skill-fill" style="width:90%"></div>
-</div>
-
-</div>
-
-
-<div class="skill">
-
-<div class="skill-top">
-<span>Graphic Design</span>
-<span>75%</span>
-</div>
-
-<div class="skill-bar">
-<div class="skill-fill" style="width:75%"></div>
-</div>
-
-</div>
-
-
-<div class="skill">
-
-<div class="skill-top">
-<span>Team Leadership</span>
-<span>90%</span>
-</div>
-
-<div class="skill-bar">
-<div class="skill-fill" style="width:90%"></div>
+<div class="bar">
+<div class="fill" style="width:90%"></div>
 </div>
 
 </div>
@@ -1738,52 +1327,66 @@ Team supervision, coordination and field management.
 </div>
 
 </div>
-
 </section>
 
 
-<!-- =========================
-     JOB OPPORTUNITIES
-========================= -->
+<!-- CV -->
 
-<section id="jobs" class="jobs-section">
+<section id="cv">
 
 <div class="container">
 
-<div class="section-title">
+<div class="cv-box">
 
-<h2>Latest NGO Job Opportunities</h2>
+<h2>My CV</h2>
 
 <p>
-Current NGO / Development sector job information
+View or download the CV containing the professional,
+educational and experience information.
 </p>
 
+<button class="btn" onclick="downloadCV()">
+⬇ Download CV (HTML)
+</button>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- JOBS -->
+
+<section id="jobs" class="jobs">
+
+<div class="container">
+
+<div class="title">
+
+<h2>Latest Job Opportunities</h2>
+
+<p>NGO / Development Sector</p>
+
 </div>
 
 
-<div class="jobs-head">
-
-<h2>Running NGO Jobs</h2>
-
-<div class="jobs-actions">
+<div class="job-tools">
 
 <input
-type="text"
+class="search"
 id="jobSearch"
-class="job-search"
-placeholder="Search NGO / Job..."
-onkeyup="filterJobs()">
+type="text"
+placeholder="Search NGO or job..."
+onkeyup="searchJobs()">
 
 <a
+class="btn primary"
 href="https://www.bdjobs.com.bd/CategoryJob/21"
-target="_blank"
-class="btn btn-primary">
+target="_blank">
 
-🔎 Live NGO Jobs
+View Live NGO Jobs
 
 </a>
-
-</div>
 
 </div>
 
@@ -1791,250 +1394,100 @@ class="btn btn-primary">
 <div class="jobs-grid" id="jobsGrid">
 
 
-<!-- JOB 1 -->
+<div class="job">
 
-<div class="job-card">
-
-<h3>Field Facilitator - Child Protection</h3>
+<h3>NGO / Development Jobs</h3>
 
 <div class="job-org">
-Bangladesh Labour Foundation (BLF)
+BDJobs NGO / Development Category
 </div>
 
-<div class="job-meta">
-
-<span>📍 Anywhere in Bangladesh</span>
-
-<span>💼 5 Vacancies</span>
-
-<span>⏱ Full Time</span>
-
-<span class="deadline">
-📅 Deadline: 14 Oct 2026
-</span>
-
+<div class="job-info">
+Current NGO and development-sector vacancies can be
+checked from the live source.
 </div>
-
-<div class="job-footer">
-
-<span>NGO / Development</span>
 
 <a
-href="https://www.bdjobs.com.bd/com_job_detail/258970"
-target="_blank"
-class="apply-btn">
-
-Apply / Details →
-
-</a>
-
-</div>
-
-</div>
-
-
-<!-- JOB 2 -->
-
-<div class="job-card">
-
-<h3>Prottyashi NGO Recruitment</h3>
-
-<div class="job-org">
-Prottyashi
-</div>
-
-<div class="job-meta">
-
-<span>📍 Bangladesh</span>
-
-<span>💼 Multiple Posts</span>
-
-<span>🎓 Graduate / Postgraduate</span>
-
-<span class="deadline">
-📅 Deadline: 26 Sep 2026
-</span>
-
-</div>
-
-<div class="job-footer">
-
-<span>NGO Job Circular</span>
-
-<a
-href="https://bdjobshub.com/?category=%E0%A6%8F%E0%A6%A8%E0%A6%9C%E0%A6%BF%E0%A6%93"
-target="_blank"
-class="apply-btn">
-
-Details →
-
-</a>
-
-</div>
-
-</div>
-
-
-<!-- JOB 3 -->
-
-<div class="job-card">
-
-<h3>Setu NGO Recruitment</h3>
-
-<div class="job-org">
-Setu NGO
-</div>
-
-<div class="job-meta">
-
-<span>📍 Bangladesh</span>
-
-<span>💼 169 Posts</span>
-
-<span>🎓 Graduate</span>
-
-<span class="deadline">
-📅 Deadline: 24 Sep 2026
-</span>
-
-</div>
-
-<div class="job-footer">
-
-<span>NGO Job Circular</span>
-
-<a
-href="https://bdjobshub.com/?category=%E0%A6%8F%E0%A6%A8%E0%A6%9C%E0%A6%BF%E0%A6%93"
-target="_blank"
-class="apply-btn">
-
-Details →
-
-</a>
-
-</div>
-
-</div>
-
-
-<!-- JOB 4 -->
-
-<div class="job-card">
-
-<h3>CODEC NGO Recruitment</h3>
-
-<div class="job-org">
-Community Development Centre (CODEC)
-</div>
-
-<div class="job-meta">
-
-<span>📍 Bangladesh</span>
-
-<span>💼 NGO / Development</span>
-
-<span>🎓 Graduate / Postgraduate</span>
-
-<span class="deadline">
-📅 Deadline: 25 Sep 2026
-</span>
-
-</div>
-
-<div class="job-footer">
-
-<span>NGO Job Circular</span>
-
-<a
-href="https://bdjobshub.com/?category=%E0%A6%8F%E0%A6%A8%E0%A6%9C%E0%A6%BF%E0%A6%93"
-target="_blank"
-class="apply-btn">
-
-Details →
-
-</a>
-
-</div>
-
-</div>
-
-
-<!-- JOB 5 -->
-
-<div class="job-card">
-
-<h3>Humanitarian Assistance Organization</h3>
-
-<div class="job-org">
-Humanitarian Assistance Organization
-</div>
-
-<div class="job-meta">
-
-<span>📍 Bangladesh</span>
-
-<span>💼 100 Posts</span>
-
-<span>🎓 Graduate</span>
-
-<span class="deadline">
-📅 Deadline: 02 Oct 2026
-</span>
-
-</div>
-
-<div class="job-footer">
-
-<span>NGO Job Circular</span>
-
-<a
-href="https://bdjobshub.com/?category=%E0%A6%8F%E0%A6%A8%E0%A6%9C%E0%A6%BF%E0%A6%93"
-target="_blank"
-class="apply-btn">
-
-Details →
-
-</a>
-
-</div>
-
-</div>
-
-
-<!-- JOB 6 -->
-
-<div class="job-card">
-
-<h3>Deputy Manager - Business Development</h3>
-
-<div class="job-org">
-Research Evaluation & Development Studies (REDS)
-</div>
-
-<div class="job-meta">
-
-<span>📍 Dhaka</span>
-
-<span>💼 NGO / Development</span>
-
-<span>🎓 Masters</span>
-
-<span class="deadline">
-📅 Deadline: 01 Oct 2026
-</span>
-
-</div>
-
-<div class="job-footer">
-
-<span>NGO / Development</span>
-
-<a
+class="apply"
 href="https://www.bdjobs.com.bd/CategoryJob/21"
-target="_blank"
-class="apply-btn">
+target="_blank">
 
-Search / Apply →
+View Current Jobs →
+
+</a>
+
+</div>
+
+
+<div class="job">
+
+<h3>NGO Jobs in Bangladesh</h3>
+
+<div class="job-org">
+BDJobs NGO Category
+</div>
+
+<div class="job-info">
+Use the live category to see currently published
+NGO vacancies, requirements and deadlines.
+</div>
+
+<a
+class="apply"
+href="https://www.bdjobs.com.bd/CategoryJob/21"
+target="_blank">
+
+Search Jobs →
+
+</a>
+
+</div>
+
+
+<div class="job">
+
+<h3>Development Sector Career</h3>
+
+<div class="job-org">
+NGO / Development Sector
+</div>
+
+<div class="job-info">
+Job information changes regularly. Always verify the
+original advertisement before applying.
+</div>
+
+<a
+class="apply"
+href="https://www.bdjobs.com.bd/CategoryJob/21"
+target="_blank">
+
+Open Live List →
+
+</a>
+
+</div>
+
+
+<div class="job">
+
+<h3>Latest NGO Vacancy Search</h3>
+
+<div class="job-org">
+Bangladesh Jobs
+</div>
+
+<div class="job-info">
+Search the current NGO job listings directly from
+the live job category.
+</div>
+
+<a
+class="apply"
+href="https://www.bdjobs.com.bd/CategoryJob/21"
+target="_blank">
+
+View Vacancy →
 
 </a>
 
@@ -2042,123 +1495,21 @@ Search / Apply →
 
 </div>
 
-
 </div>
-
-
-<div class="live-note">
-
-<strong>ℹ Job Update:</strong>
-
-এই অংশে বর্তমানে পাওয়া NGO/Development চাকরির তথ্য দেখানো হয়েছে।
-নতুন চাকরি দেখতে <strong>Live NGO Jobs</strong> বাটনে ক্লিক করুন।
-চাকরির আবেদন করার আগে মূল বিজ্ঞপ্তির deadline ও requirements অবশ্যই যাচাই করুন।
-
-</div>
-
-</div>
-
 </section>
 
 
-<!-- =========================
-     GALLERY
-========================= -->
-
-<section id="gallery">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Gallery</h2>
-
-<p>Professional Gallery</p>
-
-</div>
-
-
-<div class="gallery-grid">
-
-
-<div class="gallery-box">
-
-<img
-src="profile.jpg"
-alt="Mazharul Islam"
-onerror="this.style.display='none'; this.parentElement.innerHTML='Professional Photo';">
-
-</div>
-
-
-<div class="gallery-box">
-Professional Activity
-</div>
-
-
-<div class="gallery-box">
-Training / Workshop
-</div>
-
-
-<div class="gallery-box">
-Career & Achievement
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     CAREER GOAL
-========================= -->
-
-<section>
-
-<div class="container">
-
-<div class="goal">
-
-<div>
-
-<h3>My Career Goal</h3>
-
-<p>
-To contribute to the development sector by using my skills,
-experience and knowledge for creating a positive impact
-and achieving sustainable development.
-</p>
-
-</div>
-
-<a href="#contact" class="btn btn-outline">
-Get In Touch →
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     CONTACT
-========================= -->
+<!-- CONTACT -->
 
 <section id="contact">
 
 <div class="container">
 
-<div class="section-title">
+<div class="title">
 
 <h2>Contact Me</h2>
 
-<p>Let's Connect</p>
+<p>Get in touch</p>
 
 </div>
 
@@ -2170,65 +1521,69 @@ Get In Touch →
 
 <h3>Contact Information</h3>
 
-<ul class="info-list">
+<ul class="info">
 
 <li>
-<b>Name</b>
-<span>Mazharul Islam</span>
-</li>
-
-<li>
-<b>Profession</b>
-<span>NGO & Microfinance Professional</span>
-</li>
-
-<li>
-<b>Location</b>
-<span>Noakhali, Bangladesh</span>
-</li>
-
-<li>
-<b>Email</b>
-<span>mazharul17051991@gmail.com</span>
-</li>
-
-<li>
-<b>Phone</b>
-<span>01619-023024</span>
+<b>Mobile</b>
+<a href="tel:01619023024">01619-023024</a>
 </li>
 
 <li>
 <b>Alternative</b>
-<span>01921-423009</span>
+<a href="tel:01921423009">01921-423009</a>
+</li>
+
+<li>
+<b>Email</b>
+<a href="mailto:mazharul17051991@gmail.com">
+mazharul17051991@gmail.com
+</a>
+</li>
+
+<li>
+<b>Address</b>
+C/O: Suruj Mamber Bari (Miyer Pol),
+Vill: Hajipur, P.O: Chowumhani,
+P.S: Begumgonj, Dist: Noakhali
 </li>
 
 </ul>
+
+<div class="social">
+
+<a href="tel:01921423009">📞 Call</a>
+
+<a href="sms:01921423009">💬 SMS</a>
+
+<a href="https://wa.me/8801921423009"
+target="_blank">
+WhatsApp
+</a>
+
+</div>
 
 </div>
 
 
 <div class="card">
 
-<h3>Send a Message</h3>
+<h3>Send Message by Email</h3>
 
-<form
-class="contact-form"
-onsubmit="sendEmail(event)">
+<form class="contact-form"
+onsubmit="sendMessage(event)">
 
 <input
-type="text"
-id="senderName"
+id="name"
 placeholder="Your Name"
 required>
 
 <input
+id="email"
 type="email"
-id="senderEmail"
 placeholder="Your Email"
 required>
 
 <input
-type="text"
 id="subject"
 placeholder="Subject"
 required>
@@ -2239,10 +1594,10 @@ placeholder="Your Message"
 required></textarea>
 
 <button
-type="submit"
-class="btn btn-primary">
+class="btn primary"
+type="submit">
 
-✉ Send Message
+Send Message
 
 </button>
 
@@ -2253,107 +1608,61 @@ class="btn btn-primary">
 </div>
 
 </div>
-
 </section>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
 
 <footer>
 
 <div class="container">
 
-<div class="footer-grid">
+<h3>Mazharul Islam</h3>
 
-<div class="footer-name">
+<p>NGO Sector Professional</p>
 
-<strong>Mazharul Islam</strong>
+<div class="social">
 
-<span>NGO & Microfinance Professional</span>
+<a href="tel:01619023024">01619-023024</a>
 
-</div>
+<a href="tel:01921423009">01921-423009</a>
 
+<a href="https://wa.me/8801921423009"
+target="_blank">
+WhatsApp
+</a>
 
-<div class="footer-nav">
-
-<a href="#home">Home</a>
-<a href="#about">About Me</a>
-<a href="#experience">Experience</a>
-<a href="#education">Education</a>
-<a href="#skills">Skills</a>
-<a href="#jobs">Jobs</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
+<a href="mailto:mazharul17051991@gmail.com">
+Email
+</a>
 
 </div>
 
-</div>
-
-
-<div class="copyright">
-
+<p>
 © 2026 Mazharul Islam. All Rights Reserved.
-
-</div>
+</p>
 
 </div>
 
 </footer>
 
 
-<!-- =========================
-     MODAL
-========================= -->
-
-<div class="modal" id="modal">
-
-<div class="modal-box">
-
-<div class="modal-head">
-
-<h2 id="modalTitle">Information</h2>
-
-<button onclick="closeModal()">×</button>
-
-</div>
-
-<div class="modal-body" id="modalBody">
-
-</div>
-
-</div>
-
-</div>
-
-
 <script>
-
-/* =========================
-   MOBILE MENU
-========================= */
 
 function toggleMenu(){
 
     document
-    .getElementById("navLinks")
+    .getElementById("nav")
     .classList
     .toggle("show");
 
 }
 
 
-/* =========================
-   CLOSE MOBILE MENU
-========================= */
-
-document.querySelectorAll(".nav-links a").forEach(function(link){
+document.querySelectorAll(".nav a").forEach(function(link){
 
     link.addEventListener("click",function(){
 
         document
-        .getElementById("navLinks")
+        .getElementById("nav")
         .classList
         .remove("show");
 
@@ -2362,400 +1671,310 @@ document.querySelectorAll(".nav-links a").forEach(function(link){
 });
 
 
-/* =========================
-   JOB SEARCH
-========================= */
+function searchJobs(){
 
-function filterJobs(){
+    let search =
+    document
+    .getElementById("jobSearch")
+    .value
+    .toLowerCase();
 
-    const input =
-        document
-        .getElementById("jobSearch")
-        .value
-        .toLowerCase();
+    let jobs =
+    document
+    .querySelectorAll(".job");
 
-    const cards =
-        document.querySelectorAll(".job-card");
+    jobs.forEach(function(job){
 
-    cards.forEach(function(card){
+        let text =
+        job.innerText.toLowerCase();
 
-        const text =
-            card.innerText.toLowerCase();
-
-        if(text.includes(input)){
-
-            card.style.display="block";
-
-        }else{
-
-            card.style.display="none";
-
-        }
+        job.style.display =
+        text.includes(search)
+        ? "block"
+        : "none";
 
     });
 
 }
 
 
-/* =========================
-   CONTACT EMAIL
-========================= */
-
-function sendEmail(event){
+function sendMessage(event){
 
     event.preventDefault();
 
-    const name =
-        document.getElementById("senderName").value;
+    let name =
+    document.getElementById("name").value;
 
-    const email =
-        document.getElementById("senderEmail").value;
+    let email =
+    document.getElementById("email").value;
 
-    const subject =
-        document.getElementById("subject").value;
+    let subject =
+    document.getElementById("subject").value;
 
-    const message =
-        document.getElementById("message").value;
+    let message =
+    document.getElementById("message").value;
 
-
-    const body =
-        "Name: " + name +
-        "%0D%0AEmail: " + email +
-        "%0D%0A%0D%0A" +
-        message;
-
+    let body =
+    "Name: " + name +
+    "\nEmail: " + email +
+    "\n\n" + message;
 
     window.location.href =
-        "mailto:mazharul17051991@gmail.com" +
-        "?subject=" +
-        encodeURIComponent(subject) +
-        "&body=" +
-        body;
+    "mailto:mazharul17051991@gmail.com" +
+    "?subject=" +
+    encodeURIComponent(subject) +
+    "&body=" +
+    encodeURIComponent(body);
 
 }
 
 
-/* =========================
-   CV DOWNLOAD
-========================= */
+/* CV DOWNLOAD */
 
 function downloadCV(){
 
-    const cv = `
-
-<!DOCTYPE html>
-
-<html lang="en">
-
+let cv = `<!DOCTYPE html>
+<html>
 <head>
-
 <meta charset="UTF-8">
-
 <title>Mazharul Islam - CV</title>
-
 <style>
-
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    margin:0;
-    background:#f3f6fa;
-    color:#23384d;
+font-family:Arial,sans-serif;
+background:#f3f6f9;
+color:#24384d;
+margin:0;
 }
-
 .cv{
-    max-width:900px;
-    margin:30px auto;
-    background:white;
-    padding:45px;
-    box-shadow:0 5px 25px rgba(0,0,0,.12);
+max-width:900px;
+margin:30px auto;
+background:white;
+padding:40px;
 }
-
-.header{
-    border-bottom:4px solid #087fe5;
-    padding-bottom:20px;
-    margin-bottom:25px;
-}
-
 h1{
-    margin:0;
-    font-size:38px;
-    color:#073d75;
+color:#073663;
+margin-bottom:4px;
 }
-
-.title{
-    color:#0876c9;
-    font-size:18px;
-    margin-top:5px;
-}
-
-.contact{
-    margin-top:12px;
-    font-size:13px;
-    line-height:1.8;
-}
-
 h2{
-    color:#073d75;
-    border-bottom:2px solid #dceaf5;
-    padding-bottom:7px;
-    margin-top:25px;
+color:#075a9e;
+border-bottom:2px solid #dce7ef;
+padding-bottom:6px;
+margin-top:25px;
 }
-
-.job{
-    margin-bottom:18px;
+h3{
+color:#174c76;
+margin-bottom:3px;
 }
-
-.job h3{
-    margin-bottom:2px;
-    color:#174c7c;
+p,li{
+font-size:14px;
+line-height:1.6;
 }
-
 .company{
-    color:#0877c9;
-    font-weight:bold;
+color:#0877c9;
+font-weight:bold;
 }
-
+.date{
+color:#666;
+font-size:13px;
+}
 ul{
-    padding-left:20px;
+padding-left:20px;
 }
-
-li{
-    margin-bottom:5px;
-}
-
-.footer{
-    margin-top:35px;
-    border-top:1px solid #ddd;
-    padding-top:12px;
-    font-size:11px;
-    color:#777;
-}
-
-@media print{
-
-    body{
-        background:white;
-    }
-
-    .cv{
-        box-shadow:none;
-        margin:0;
-        max-width:none;
-    }
-
-}
-
 </style>
-
 </head>
-
 <body>
 
 <div class="cv">
 
-<div class="header">
-
 <h1>Mazharul Islam</h1>
 
-<div class="title">
-NGO & Microfinance Professional
-</div>
-
-<div class="contact">
-
-Noakhali, Bangladesh<br>
-
-Email:
-mazharul17051991@gmail.com<br>
-
-Phone:
-01619-023024, 01921-423009
-
-</div>
-
-</div>
-
-
-<h2>Professional Summary</h2>
-
 <p>
-A highly committed, result-oriented and dedicated NGO &
-Microfinance professional with extensive experience in
-branch management, microfinance operations, team leadership,
-field operations, client service and organizational activities.
+<strong>NGO Sector Professional</strong><br>
+Mobile: 01619-023024, 01921-423009<br>
+Email: mazharul17051991@gmail.com<br>
+Address: C/O: Suruj Mamber Bari (Miyer Pol),
+Vill: Hajipur, P.O: Chowumhani,
+P.S: Begumgonj, Dist: Noakhali
 </p>
 
+<h2>Career Objective</h2>
 
-<h2>Professional Experience</h2>
+<p>
+A highly committed, result-oriented, sound-minded & dedicated
+professional with 12 years of proven experience in the NGO
+sector seeking an NGO job position in a dynamic organization
+that needs an expert who can efficiently and effectively
+handle various banking needs.
+</p>
 
+<h2>Professional Profile</h2>
 
-<div class="job">
-
-<h3>Branch Manager</h3>
-
-<div class="company">
-NGO / Microfinance Sector
-</div>
-
-<ul>
-
-<li>Managed overall branch operations.</li>
-
-<li>Supervised field staff and team activities.</li>
-
-<li>Monitored loan disbursement and collection.</li>
-
-<li>Prepared operational and management reports.</li>
-
-<li>Maintained client and branch records.</li>
-
-</ul>
-
-</div>
-
-
-<div class="job">
-
-<h3>First Credit Officer</h3>
-
-<div class="company">
-NGO / Microfinance Sector
-</div>
-
-<ul>
-
-<li>Managed credit-related field activities.</li>
-
-<li>Conducted client verification.</li>
-
-<li>Supported loan processing and documentation.</li>
-
-<li>Monitored repayment and collection.</li>
-
-<li>Maintained field reports and records.</li>
-
-</ul>
-
-</div>
-
+<p>
+Culturally sensitive and experienced leader with highly
+developed communication skills, written, verbal, and
+presentational. Adept at strategically identifying,
+developing, and implementing customized solutions to support
+global business strategies and needs. Excellent in strategic
+planning with comprehensive knowledge of business engagement,
+organizational development, and team building.
+</p>
 
 <h2>Academic Qualification</h2>
 
+<h3>Bachelor of Business Studies (Degree)</h3>
 <p>
-Academic qualification information can be added to the
-website and CV after entering the exact degree, institution,
-passing year and result.
+University: National University<br>
+Institution: Noakhali Govt. Collage<br>
+Subject: Accounting<br>
+Year: 2011<br>
+Session: 2009-2010<br>
+Result: 2nd Division
 </p>
 
+<h3>Higher Secondary Certificate (H.S.C)</h3>
+<p>
+Institution: Sonapur Degree Collage<br>
+Subject / Group: Business Studies<br>
+Year: 2008<br>
+Board: Cumilla<br>
+Result: GPA - 4.00 (Out of 5)
+</p>
 
-<h2>Additional Qualification</h2>
+<h3>Secondary Certificate (S.S.C)</h3>
+<p>
+Institution: Brother Andre High School<br>
+Subject / Group: Business Studies<br>
+Year: 2006<br>
+Board: Cumilla<br>
+Result: GPA - 3.88 (Out of 5)
+</p>
 
+<h2>Experience Details</h2>
+
+<h3>Branch Manager — BASTOB (NGO)</h3>
+<p class="company">Shantirhat Branch</p>
+<p class="date">22-11-2025 To Till</p>
+<p>
+Working Area: Patiya Upazila<br>
+Department: MFP (Microfinance Program)
+</p>
 <ul>
-
-<li>MS Word</li>
-<li>MS Excel</li>
-<li>MS PowerPoint</li>
-<li>Internet Browsing</li>
-<li>Graphic Design</li>
-<li>Team Leadership</li>
-
+<li>Branch Operations Management</li>
+<li>Team Leadership & Supervision</li>
+<li>Loan Portfolio Management</li>
+<li>Client Relationship & Community Engagement</li>
+<li>Business Growth & Development</li>
+<li>Compliance & Risk Management</li>
+<li>Reporting & Communication</li>
 </ul>
 
-
-<h2>Professional Skills</h2>
-
+<h3>Branch Manager — UDDIPAN (NGO)</h3>
+<p class="company">Hajigonj-01</p>
+<p class="date">01-06-2021 To 31-07-2025</p>
+<p>
+Working Area: Hajigonj Upazila<br>
+Previous Working Area: Shahrasti 01 & 02,
+Kachua 01 & 02, Chitoshi Branch UDDIPAN<br>
+Department: MFP (Microfinance Program)
+</p>
 <ul>
-
-<li>Branch Management</li>
-<li>Microfinance Operations</li>
-<li>Team Leadership</li>
-<li>Field Operations</li>
-<li>Client Management</li>
-<li>Report Preparation</li>
-<li>Staff Supervision</li>
-
+<li>Branch Operations Management</li>
+<li>Team Leadership & Supervision</li>
+<li>Loan Portfolio Management</li>
+<li>Client Relationship & Community Engagement</li>
+<li>Business Growth & Development</li>
+<li>Compliance & Risk Management</li>
+<li>Reporting & Communication</li>
 </ul>
 
+<h3>FCO (First Credit Officer) — UDDIPAN (NGO)</h3>
+<p class="company">Porsuram Branch</p>
+<p class="date">05-11-2014 To 31-05-2016</p>
+<p>
+Working Area: Porsuram Upazila<br>
+Department: MFP (Microfinance Program)
+</p>
+<ul>
+<li>Client Identification and Group Formation</li>
+<li>Loan Processing and Disbursement</li>
+<li>Loan Monitoring and Recovery</li>
+<li>Client Relationship Management</li>
+<li>Reporting and Documentation</li>
+<li>Target Achievement</li>
+</ul>
 
-<div class="footer">
+<h3>Branch Accounts — Delta Life Insurance Company Limited</h3>
+<p class="company">
+(Gono-Gramin) Bima Division Maijdee Court Branch
+</p>
+<p class="date">04-01-2011 To 30-10-2014</p>
+<p>
+Working Area: Noakhali Sadar<br>
+Department: Accounts
+</p>
+<ul>
+<li>Financial Record Keeping</li>
+<li>Premium Collection and Accounting</li>
+<li>Claims Accounting</li>
+<li>Financial Reporting and Analysis</li>
+<li>Reporting & Communication</li>
+</ul>
 
-Generated from Mazharul Islam Professional Career Portal.
+<h2>Computer Skill</h2>
+
+<p>
+MS Word, MS Excel, MS PowerPoint,
+Internet Browsing, Graphic Desing
+</p>
+
+<h2>Professional Strengths</h2>
+
+<ul>
+<li>Critical Thinking</li>
+<li>Decision-making and problem-solving skills</li>
+<li>Planning & organizing abilities</li>
+<li>Creative, insightful & innovative</li>
+<li>Emotional intelligence</li>
+<li>Honest, sincere, and punctual in work</li>
+<li>Time Management at Work</li>
+</ul>
+
+<h2>Declaration</h2>
+
+<p>
+I, the undersigned, do hereby state that to the best of my
+knowledge and belief, the above-mentioned data correctly
+describes my qualification and me.
+</p>
+
+<p><strong>Mazharul Islam</strong></p>
 
 </div>
-
-</div>
-
 </body>
+</html>`;
 
-</html>
-
-`;
-
-
-    const blob =
-        new Blob(
-            [cv],
-            {type:"text/html;charset=utf-8"}
-        );
-
-
-    const url =
-        URL.createObjectURL(blob);
-
-
-    const link =
-        document.createElement("a");
-
-
-    link.href=url;
-
-    link.download=
-        "Mazharul_Islam_CV.html";
-
-    document.body.appendChild(link);
-
-    link.click();
-
-    document.body.removeChild(link);
-
-    URL.revokeObjectURL(url);
-
-}
-
-
-/* =========================
-   CLOSE MODAL
-========================= */
-
-function closeModal(){
-
-    document
-    .getElementById("modal")
-    .classList
-    .remove("show");
-
-}
-
-
-/* =========================
-   CLOSE MODAL OUTSIDE
-========================= */
-
-document
-.getElementById("modal")
-.addEventListener("click",function(e){
-
-    if(e.target===this){
-
-        closeModal();
-
-    }
-
+let blob = new Blob([cv],{
+type:"text/html;charset=utf-8"
 });
 
+let url = URL.createObjectURL(blob);
+
+let a = document.createElement("a");
+
+a.href = url;
+a.download = "Mazharul_Islam_CV.html";
+
+document.body.appendChild(a);
+
+a.click();
+
+document.body.removeChild(a);
+
+URL.revokeObjectURL(url);
+
+}
 
 </script>
 
 </body>
-
 </html>
