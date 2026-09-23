@@ -178,6 +178,8 @@ header{
     box-shadow:0 4px 18px rgba(0,0,0,.1);
 }
 
+.photo-fallback{width:250px;height:300px;border:5px solid white;border-radius:8px;box-shadow:0 5px 25px rgba(0,0,0,.2);background:linear-gradient(135deg,#e9f3fb,#d5e8f7);align-items:center;justify-content:center;font-size:54px;font-weight:800;color:#075a9e}
+.contact-icon{width:28px;text-align:center;color:#0876c8;font-size:18px}
 .contact-line{
     display:flex;
     gap:10px;
@@ -210,7 +212,7 @@ header{
 
 .quick-grid{
     display:grid;
-    grid-template-columns:repeat(7,1fr);
+    grid-template-columns:repeat(10,1fr);
 }
 
 .quick a{
@@ -722,6 +724,7 @@ footer p{
 @media(max-width:700px){.detail-box{margin:15px auto;padding:20px}.modern-social a{width:40px;height:40px}}
 
 @media(max-width:700px){.gallery-grid{grid-template-columns:repeat(2,1fr)!important}}
+@media print{body>*:not(#cvPrint){display:none!important}#cvPrint{position:static!important;left:auto!important;top:auto!important;width:100%!important;display:block!important;box-shadow:none!important}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -734,7 +737,7 @@ footer p{
 
 <a href="#home" class="logo">
 Mazharul Islam
-<small>Professional Profile</small>
+<small>NGO & Microfinance Professional</small>
 </a>
 
 <button class="menu" onclick="toggleMenu()">☰ Menu</button>
@@ -765,7 +768,8 @@ Mazharul Islam
 src="profile.jpg"
 class="profile"
 alt="Mazharul Islam"
-onerror="this.alt='Mazharul Islam';">
+onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+<div class="photo-fallback" style="display:none">MI</div>
 </div>
 
 <div class="intro">
@@ -774,18 +778,16 @@ onerror="this.alt='Mazharul Islam';">
 
 <h1>Mazharul <span>Islam</span></h1>
 
-<h2>NGO Sector Professional</h2>
+<h2>NGO & Microfinance Professional</h2>
 
 <p>
 A highly committed, result-oriented & dedicated professional
-with 12 years of proven experience in the NGO sector.
+with practical experience across NGO, microfinance, branch operations, accounts, team leadership and client service.
 </p>
 
 <div class="buttons">
 
-<a href="#cv" class="btn primary">
-Download My CV
-</a>
+<button class="btn primary" onclick="downloadPDF()"><i class="fa-solid fa-download"></i> Download CV</button>
 
 <a href="#contact" class="btn secondary">
 Contact Me
@@ -797,40 +799,18 @@ Contact Me
 
 
 <div class="contact-box">
-
-<div class="contact-line">
-<div>📍</div>
-<div>
-<b>Address</b>
-<span>Noakhali, Bangladesh</span>
+<div class="contact-line"><div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div><div><b>Location</b><span>Noakhali, Bangladesh</span></div></div>
+<div class="contact-line"><div class="contact-icon"><i class="fa-solid fa-briefcase"></i></div><div><b>Experience</b><span id="experienceCounter">Calculating...</span></div></div>
+<div class="contact-line"><div class="contact-icon"><i class="fa-solid fa-envelope"></i></div><div><b>Email</b><span>mazharul17051991@gmail.com</span></div></div>
+<div class="contact-line"><div class="contact-icon"><i class="fa-solid fa-phone"></i></div><div><b>Phone</b><span>01619-023024</span><span>01921-423009</span></div></div>
+<div class="contact-line"><div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div><div><b>WhatsApp / IMO</b><span>01921-423009</span></div></div>
+<div class="modern-social">
+<a class="icon-fb" href="https://www.facebook.com/mazharul0205" target="_blank" rel="noopener" title="Facebook ID"><i class="fa-brands fa-facebook-f"></i></a>
+<a class="icon-fb" href="https://www.facebook.com/mazharul06" target="_blank" rel="noopener" title="Facebook Page"><i class="fa-brands fa-facebook"></i></a>
+<a class="icon-yt" href="https://www.youtube.com/@Pranijagatkids" target="_blank" rel="noopener" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+<a class="icon-wa" href="https://wa.me/8801921423009" target="_blank" rel="noopener" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<a class="icon-mail" href="mailto:mazharul17051991@gmail.com" title="Gmail"><i class="fa-solid fa-envelope"></i></a>
 </div>
-</div>
-
-<div class="contact-line">
-<div>☎</div>
-<div>
-<b>Mobile</b>
-<span>01619-023024</span>
-<span>01921-423009</span>
-</div>
-</div>
-
-<div class="contact-line">
-<div>✉</div>
-<div>
-<b>Email</b>
-<span>mazharul17051991@gmail.com</span>
-</div>
-</div>
-
-<div class="contact-line">
-<div>💼</div>
-<div>
-<b>Experience</b>
-<span id="experienceCounter">Calculating...</span>
-</div>
-</div>
-
 </div>
 
 </div>
@@ -842,42 +822,16 @@ Contact Me
 <div class="quick">
 
 <div class="container quick-grid">
-
-<a href="#about">
-<div class="quick-icon i1">👤</div>
-<strong>About Me</strong>
-</a>
-
-<a href="#experience">
-<div class="quick-icon i2">💼</div>
-<strong>Experience</strong>
-</a>
-
-<a href="#education">
-<div class="quick-icon i3">🎓</div>
-<strong>Academic Qualification</strong>
-</a>
-
-<a href="#additional">
-<div class="quick-icon i4">📚</div>
-<strong>Additional Qualification</strong>
-</a>
-
-<a href="#skills">
-<div class="quick-icon i5">⚙</div>
-<strong>Computer Skills</strong>
-</a>
-
-<a href="#cv">
-<div class="quick-icon i6">📄</div>
-<strong>My CV</strong>
-</a>
-
-<a href="#jobs">
-<div class="quick-icon i7">🔎</div>
-<strong>Jobs</strong>
-</a>
-
+<a href="#about"><div class="quick-icon i1"><i class="fa-solid fa-user"></i></div><strong>About Me</strong></a>
+<a href="#experience" onclick="openDetails('experience');return false;"><div class="quick-icon i2"><i class="fa-solid fa-briefcase"></i></div><strong>Experience</strong></a>
+<a href="#education" onclick="openDetails('education');return false;"><div class="quick-icon i3"><i class="fa-solid fa-graduation-cap"></i></div><strong>Academic Qualification</strong></a>
+<a href="#additional" onclick="openDetails('additional');return false;"><div class="quick-icon i4"><i class="fa-solid fa-book"></i></div><strong>Additional Qualification</strong></a>
+<a href="#skills"><div class="quick-icon i5"><i class="fa-solid fa-gears"></i></div><strong>Computer Skills</strong></a>
+<a href="#jobs"><div class="quick-icon i6"><i class="fa-solid fa-magnifying-glass"></i></div><strong>Job Opportunities</strong></a>
+<a href="#gallery"><div class="quick-icon i7"><i class="fa-solid fa-image"></i></div><strong>Gallery</strong></a>
+<a href="#cv"><div class="quick-icon i8"><i class="fa-solid fa-file-pdf"></i></div><strong>My CV</strong></a>
+<a href="#contact"><div class="quick-icon i9"><i class="fa-solid fa-trophy"></i></div><strong>Career</strong></a>
+<a href="#contact"><div class="quick-icon i10"><i class="fa-solid fa-envelope"></i></div><strong>Contact</strong></a>
 </div>
 </div>
 
@@ -899,33 +853,11 @@ Contact Me
 
 <h3>Career Objective</h3>
 
-<p>
-A highly committed, result-oriented, sound-minded & dedicated
-professional with 12 years of proven experience in the NGO
-sector seeking an NGO job position in a dynamic organization
-that needs an expert who can efficiently and effectively
-handle various banking needs.
-</p>
+<p id="careerObjective">To contribute practical experience in NGO and development-sector operations to an organization where branch management, responsible team leadership, microfinance operations, client service, reporting and disciplined execution can support sustainable program performance and organizational growth.</p>
 
 <h3>Professional Profile</h3>
 
-<p>
-Culturally sensitive and experienced leader with highly
-developed communication skills, written, verbal, and
-presentational.
-</p>
-
-<p>
-Adept at strategically identifying, developing, and
-implementing customized solutions to support global business
-strategies and needs.
-</p>
-
-<p>
-Excellent in strategic planning with comprehensive knowledge
-of business engagement, organizational development, and
-team building.
-</p>
+<p id="professionalProfile">Development-sector professional with practical experience across microfinance operations, branch management, accounts, field activities, team supervision, client relationship management and organizational reporting. Focused on responsible branch operations, team development, client service, compliance and achieving organizational goals through disciplined execution.</p>
 
 </div>
 
@@ -1367,7 +1299,7 @@ Department: Accounts
 <div class="container">
 <div class="title"><h2>Gallery</h2><p>Professional Photo Gallery</p></div>
 <div class="gallery-grid" id="galleryGrid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
-<div style="background:#fff;border:1px solid #dce6ef;border-radius:7px;overflow:hidden;aspect-ratio:1/1"><img src="profile.jpg" alt="Mazharul Islam" style="width:100%;height:100%;object-fit:cover"></div>
+<div style="background:#fff;border:1px solid #dce6ef;border-radius:7px;overflow:hidden;aspect-ratio:1/1"><img src="profile.jpg" alt="Mazharul Islam" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'"></div>
 </div>
 </div>
 </section>
@@ -1690,10 +1622,17 @@ function closeDetails(e){if(e && e.target!==document.getElementById('detailModal
 
 /* PDF: generated from the same CV data shown on the page. */
 function downloadPDF(){
- document.getElementById('pdfObjective').innerText=document.getElementById('careerObjective').innerText; document.getElementById('pdfProfile').innerText=document.getElementById('professionalProfile').innerText; const node=document.getElementById('cvPrint');
- node.style.position='fixed'; node.style.left='0'; node.style.top='0'; node.style.zIndex='-1';
+ const obj=document.getElementById('careerObjective');
+ const prof=document.getElementById('professionalProfile');
+ document.getElementById('pdfObjective').innerText=obj?obj.innerText:'';
+ document.getElementById('pdfProfile').innerText=prof?prof.innerText:'';
+ const node=document.getElementById('cvPrint');
+ if(typeof html2pdf==='undefined'){
+   window.print();
+   return;
+ }
  const opt={margin:0.35,filename:'Mazharul_Islam_CV.pdf',image:{type:'jpeg',quality:0.98},html2canvas:{scale:2,useCORS:true},jsPDF:{unit:'in',format:'a4',orientation:'portrait'}};
- html2pdf().set(opt).from(node).save().then(()=>{node.style.position='absolute';node.style.left='-100000px';});
+ html2pdf().set(opt).from(node).save();
 }
 
 /* PRIVATE EDIT: hidden from normal visitors. Shortcut Ctrl+Alt+E. */
