@@ -6,9 +6,11 @@
 
 <title>Mazharul Islam | Professional Career Portal</title>
 
-<meta name="description" content="Mazharul Islam - NGO and Microfinance Professional">
+<meta name="description"
+content="Mazharul Islam - NGO and Microfinance Professional">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -20,7 +22,7 @@ html{
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     background:#f4f7fb;
     color:#172033;
     line-height:1.6;
@@ -37,7 +39,8 @@ a{
     margin:auto;
 }
 
-/* Header */
+/* HEADER */
+
 header{
     background:#071a3d;
     color:white;
@@ -66,7 +69,7 @@ header{
 
 nav{
     display:flex;
-    gap:22px;
+    gap:20px;
     flex-wrap:wrap;
     justify-content:flex-end;
 }
@@ -74,14 +77,14 @@ nav{
 nav a{
     font-size:14px;
     color:#eaf3ff;
-    transition:.3s;
 }
 
 nav a:hover{
     color:#39c6ff;
 }
 
-/* Hero */
+/* HERO */
+
 .hero{
     background:linear-gradient(135deg,#071a3d,#0b3975);
     color:white;
@@ -166,7 +169,8 @@ nav a:hover{
     color:white;
 }
 
-/* Profile */
+/* PROFILE */
+
 .profile-card{
     background:white;
     padding:25px;
@@ -181,6 +185,7 @@ nav a:hover{
     height:180px;
     margin:auto;
     border-radius:50%;
+    overflow:hidden;
     background:linear-gradient(135deg,#0b3975,#39c6ff);
     display:flex;
     align-items:center;
@@ -189,6 +194,12 @@ nav a:hover{
     font-weight:800;
     color:white;
     border:7px solid #eaf6ff;
+}
+
+.profile-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 .profile-card h3{
@@ -201,7 +212,8 @@ nav a:hover{
     margin:4px 0;
 }
 
-/* Sections */
+/* SECTIONS */
+
 section{
     padding:70px 0;
 }
@@ -221,7 +233,8 @@ section{
     margin-top:8px;
 }
 
-/* Cards */
+/* CARDS */
+
 .cards{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -234,6 +247,12 @@ section{
     padding:25px;
     box-shadow:0 5px 20px rgba(15,35,70,.07);
     border:1px solid #e7edf5;
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(15,35,70,.12);
 }
 
 .card-icon{
@@ -251,7 +270,8 @@ section{
     color:#64748b;
 }
 
-/* About */
+/* ABOUT */
+
 .about{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -270,7 +290,8 @@ section{
     margin-bottom:15px;
 }
 
-/* Experience */
+/* EXPERIENCE */
+
 .experience{
     border-left:4px solid #39c6ff;
     padding-left:25px;
@@ -299,7 +320,8 @@ section{
     margin-bottom:12px;
 }
 
-/* Skills */
+/* SKILLS */
+
 .skills{
     display:flex;
     flex-wrap:wrap;
@@ -316,7 +338,74 @@ section{
     font-weight:600;
 }
 
-/* Jobs */
+/* CV */
+
+.cv-box{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(15,35,70,.07);
+    text-align:center;
+}
+
+.cv-box h3{
+    color:#0b3975;
+    margin-bottom:12px;
+}
+
+.cv-buttons{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.cv-btn{
+    background:#0b3975;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:700;
+}
+
+.cv-btn.secondary{
+    background:#39c6ff;
+    color:#06172f;
+}
+
+/* ACHIEVEMENTS */
+
+.achievement-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.achievement{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(15,35,70,.07);
+}
+
+.achievement-icon{
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.achievement h3{
+    color:#0b3975;
+    margin-bottom:8px;
+}
+
+.achievement p{
+    color:#64748b;
+    font-size:14px;
+}
+
+/* JOBS */
+
 .job-table{
     background:white;
     border-radius:15px;
@@ -348,7 +437,8 @@ section{
     font-size:13px;
 }
 
-/* Contact */
+/* CONTACT */
+
 .contact{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -372,7 +462,8 @@ section{
     color:#0b3975;
 }
 
-/* Footer */
+/* FOOTER */
+
 footer{
     background:#071a3d;
     color:#cbd9eb;
@@ -393,8 +484,10 @@ footer strong{
     font-size:14px;
 }
 
-/* Responsive */
+/* MOBILE */
+
 @media(max-width:900px){
+
     .hero-content,
     .about,
     .contact{
@@ -413,12 +506,17 @@ footer strong{
         grid-template-columns:repeat(2,1fr);
     }
 
+    .achievement-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
     nav{
         display:none;
     }
 }
 
 @media(max-width:600px){
+
     .container{
         width:94%;
     }
@@ -436,6 +534,10 @@ footer strong{
     }
 
     .cards{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .achievement-grid{
         grid-template-columns:1fr;
     }
 
@@ -451,9 +553,9 @@ footer strong{
     .profile-photo{
         width:150px;
         height:150px;
-        font-size:50px;
     }
 }
+
 </style>
 </head>
 
@@ -472,15 +574,20 @@ Mazharul <span>Islam</span>
 <a href="#experience">Experience</a>
 <a href="#education">Education</a>
 <a href="#skills">Skills</a>
-<a href="#jobs">Job Opportunities</a>
+<a href="#cv">My CV</a>
+<a href="#achievements">Achievements</a>
+<a href="#jobs">Jobs</a>
 <a href="#contact">Contact</a>
 </nav>
 
 </div>
 </header>
 
+
 <!-- HOME -->
+
 <section class="hero" id="home">
+
 <div class="container hero-content">
 
 <div>
@@ -504,13 +611,16 @@ information in one place.
 </p>
 
 <div class="hero-info">
+
 <div class="info">📍 Bangladesh</div>
 <div class="info">💼 NGO Professional</div>
 <div class="info">📊 Microfinance</div>
 <div class="info">👥 Team Leadership</div>
+
 </div>
 
 <div class="buttons">
+
 <a class="btn btn-primary" href="#experience">
 View My Experience
 </a>
@@ -518,14 +628,21 @@ View My Experience
 <a class="btn btn-outline" href="#contact">
 Contact Me
 </a>
+
 </div>
 
 </div>
+
 
 <div class="profile-card">
 
 <div class="profile-photo">
-MI
+
+<!-- পরে এখানে আপনার আসল ছবি বসানো হবে -->
+<img src="profile.jpg"
+alt="Mazharul Islam"
+onerror="this.style.display='none';this.parentElement.innerHTML='MI';">
+
 </div>
 
 <h3>Mazharul Islam</h3>
@@ -536,17 +653,24 @@ MI
 </div>
 
 </div>
+
 </section>
 
 
 <!-- SHORTCUTS -->
+
 <section>
+
 <div class="container">
 
 <div class="section-title">
+
 <h2>Explore My Career</h2>
+
 <p>Professional information and career resources</p>
+
 </div>
+
 
 <div class="cards">
 
@@ -556,11 +680,13 @@ MI
 <p>Professional profile and career objective.</p>
 </a>
 
+
 <a href="#experience" class="card">
 <div class="card-icon">💼</div>
 <h3>Experience</h3>
 <p>Professional experience and responsibilities.</p>
 </a>
+
 
 <a href="#education" class="card">
 <div class="card-icon">🎓</div>
@@ -568,11 +694,13 @@ MI
 <p>Academic qualifications and background.</p>
 </a>
 
+
 <a href="#skills" class="card">
 <div class="card-icon">⚡</div>
 <h3>Skills</h3>
 <p>Professional and computer skills.</p>
 </a>
+
 
 <a href="#jobs" class="card">
 <div class="card-icon">🔎</div>
@@ -580,31 +708,38 @@ MI
 <p>Career opportunities and job information.</p>
 </a>
 
+
 <a href="#contact" class="card">
 <div class="card-icon">📞</div>
 <h3>Contact</h3>
 <p>Get in touch for professional communication.</p>
 </a>
 
-<div class="card">
+
+<a href="#cv" class="card">
 <div class="card-icon">📄</div>
 <h3>My CV</h3>
-<p>Professional CV download section.</p>
-</div>
+<p>View and download my professional CV.</p>
+</a>
 
-<div class="card">
+
+<a href="#achievements" class="card">
 <div class="card-icon">🏆</div>
 <h3>Achievements</h3>
 <p>Career achievements and professional highlights.</p>
+</a>
+
 </div>
 
 </div>
-</div>
+
 </section>
 
 
 <!-- ABOUT -->
+
 <section id="about">
+
 <div class="container">
 
 <div class="section-title">
@@ -612,9 +747,11 @@ MI
 <p>Professional profile</p>
 </div>
 
+
 <div class="about">
 
 <div class="about-box">
+
 <h3>Professional Profile</h3>
 
 <p>
@@ -630,9 +767,12 @@ and business development.
 My professional focus is on responsible branch management,
 team development, client service and achieving organizational goals.
 </p>
+
 </div>
 
+
 <div class="about-box">
+
 <h3>Career Objective</h3>
 
 <p>
@@ -647,15 +787,20 @@ knowledge to contribute to the growth and development of an organization.
 I am interested in professional opportunities in NGO, microfinance,
 branch operations and related management positions.
 </p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 
 <!-- EXPERIENCE -->
+
 <section id="experience">
+
 <div class="container">
 
 <div class="section-title">
@@ -663,12 +808,21 @@ branch operations and related management positions.
 <p>Career journey</p>
 </div>
 
+
 <div class="experience">
 
+
 <div class="job">
+
 <h3>Branch Manager</h3>
-<div class="company">BASTOB (NGO) — Shantirhat Branch</div>
-<div class="date">22 November 2025 – Present</div>
+
+<div class="company">
+BASTOB (NGO) — Shantirhat Branch
+</div>
+
+<div class="date">
+22 November 2025 – Present
+</div>
 
 <p>
 Branch Operations Management • Team Leadership & Supervision •
@@ -676,50 +830,82 @@ Loan Portfolio Management • Client Relationship & Community Engagement •
 Business Growth & Development • Compliance & Risk Management •
 Reporting & Communication
 </p>
+
 </div>
 
+
 <div class="job">
+
 <h3>Branch Manager</h3>
-<div class="company">UDDIPAN (NGO)</div>
-<div class="date">01 June 2016 – 31 July 2025</div>
+
+<div class="company">
+UDDIPAN (NGO)
+</div>
+
+<div class="date">
+01 June 2016 – 31 July 2025
+</div>
 
 <p>
 Branch operations, team supervision, loan portfolio management,
 client relationship management, business development, compliance,
 risk management and reporting.
 </p>
+
 </div>
 
+
 <div class="job">
+
 <h3>First Credit Officer (FCO)</h3>
-<div class="company">UDDIPAN</div>
-<div class="date">05 November 2014 – 31 May 2016</div>
+
+<div class="company">
+UDDIPAN
+</div>
+
+<div class="date">
+05 November 2014 – 31 May 2016
+</div>
 
 <p>
 Client identification and group formation, loan processing,
 disbursement, loan monitoring and recovery, client relationship
 management, documentation and target achievement.
 </p>
+
 </div>
 
+
 <div class="job">
+
 <h3>Branch Accounts</h3>
-<div class="company">Delta Life Insurance Company Limited</div>
-<div class="date">04 January 2011 – 30 October 2014</div>
+
+<div class="company">
+Delta Life Insurance Company Limited
+</div>
+
+<div class="date">
+04 January 2011 – 30 October 2014
+</div>
 
 <p>
 Financial record keeping, premium collection and accounting,
 claims accounting, financial reporting, analysis and communication.
 </p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 
 <!-- EDUCATION -->
+
 <section id="education">
+
 <div class="container">
 
 <div class="section-title">
@@ -727,46 +913,71 @@ claims accounting, financial reporting, analysis and communication.
 <p>Academic qualifications</p>
 </div>
 
+
 <div class="cards">
 
+
 <div class="card">
+
 <div class="card-icon">🎓</div>
+
 <h3>Bachelor of Business Studies</h3>
+
 <p>Accounting</p>
 <p>National University</p>
 <p>Noakhali Government College</p>
 <p>2011</p>
+
 </div>
 
+
 <div class="card">
+
 <div class="card-icon">🎓</div>
+
 <h3>Higher Secondary Certificate</h3>
+
 <p>Business Studies</p>
 <p>Sonapur Degree College</p>
 <p>2008</p>
+
 </div>
 
+
 <div class="card">
+
 <div class="card-icon">🎓</div>
+
 <h3>Secondary School Certificate</h3>
+
 <p>Business Studies</p>
 <p>Brother Andre High School</p>
 <p>2006</p>
+
+</div>
+
+
 </div>
 
 </div>
-</div>
+
 </section>
 
 
 <!-- SKILLS -->
+
 <section id="skills">
+
 <div class="container">
 
 <div class="section-title">
+
 <h2>Professional Skills</h2>
+
 <p>Key competencies</p>
+
 </div>
+
 
 <div class="skills">
 
@@ -790,85 +1001,325 @@ claims accounting, financial reporting, analysis and communication.
 <div class="skill">Time Management</div>
 
 </div>
+
 </div>
+
 </section>
 
 
-<!-- JOBS -->
-<section id="jobs">
+<!-- MY CV -->
+
+<section id="cv">
+
 <div class="container">
 
 <div class="section-title">
-<h2>Job Opportunities</h2>
-<p>Career opportunities will be added here</p>
+
+<h2>My CV</h2>
+
+<p>Professional Curriculum Vitae</p>
+
 </div>
+
+
+<div class="cv-box">
+
+<h3>Mazharul Islam</h3>
+
+<p>
+NGO & Microfinance Professional
+</p>
+
+<p>
+Branch Management • Microfinance • Team Leadership
+</p>
+
+
+<div class="cv-buttons">
+
+<!-- CV PDF পরে Upload করা হবে -->
+
+<a class="cv-btn"
+href="Mazharul_Islam_CV.pdf"
+download>
+📥 Download CV
+</a>
+
+<a class="cv-btn secondary"
+href="#contact">
+📞 Contact Me
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Achievements</h2>
+
+<p>Professional highlights</p>
+
+</div>
+
+
+<div class="achievement-grid">
+
+
+<div class="achievement">
+
+<div class="achievement-icon">🏆</div>
+
+<h3>Branch Management</h3>
+
+<p>
+Experienced in managing branch operations, staff supervision,
+business development and organizational targets.
+</p>
+
+</div>
+
+
+<div class="achievement">
+
+<div class="achievement-icon">👥</div>
+
+<h3>Team Leadership</h3>
+
+<p>
+Experience in team leadership, staff supervision, communication
+and professional development.
+</p>
+
+</div>
+
+
+<div class="achievement">
+
+<div class="achievement-icon">📊</div>
+
+<h3>Microfinance Operations</h3>
+
+<p>
+Professional experience in loan portfolio management, client
+relationship management, recovery and reporting.
+</p>
+
+</div>
+
+
+<div class="achievement">
+
+<div class="achievement-icon">📈</div>
+
+<h3>Business Development</h3>
+
+<p>
+Experience in business growth, client engagement and achievement
+of organizational objectives.
+</p>
+
+</div>
+
+
+<div class="achievement">
+
+<div class="achievement-icon">🛡️</div>
+
+<h3>Compliance & Risk Management</h3>
+
+<p>
+Experience with compliance, risk management, documentation
+and branch-level reporting.
+</p>
+
+</div>
+
+
+<div class="achievement">
+
+<div class="achievement-icon">💼</div>
+
+<h3>Professional Experience</h3>
+
+<p>
+More than a decade of professional experience across NGO,
+microfinance and financial services sectors.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- JOB OPPORTUNITIES -->
+
+<section id="jobs">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Job Opportunities</h2>
+
+<p>Career opportunities and future job matching</p>
+
+</div>
+
 
 <div class="job-table">
 
 <div class="job-row header">
+
 <div>Position</div>
 <div>Organization</div>
 <div>Deadline</div>
 <div>Action</div>
+
 </div>
+
 
 <div class="job-row">
+
 <div>Job opportunities will appear here</div>
+
 <div>NGO / Organization</div>
+
 <div>—</div>
-<div class="apply">View</div>
+
+<div class="apply">
+View
 </div>
 
 </div>
+
+</div>
+
 
 <br>
 
+
 <div class="about-box">
+
 <h3>Future Job Matching System</h3>
 
 <p>
 This portal is planned to include job search, job filtering,
 deadline tracking, application tracking and CV-to-job matching.
-The system can later show matched requirements, missing skills
-and job-specific CV information.
+The system can later show matched requirements, missing skills,
+job-specific CV information and application status.
 </p>
+
 </div>
 
 </div>
+
 </section>
 
 
 <!-- CONTACT -->
+
 <section id="contact">
+
 <div class="container">
 
 <div class="section-title">
+
 <h2>Contact Me</h2>
+
 <p>Professional communication</p>
+
 </div>
 
+
 <div class="contact">
+
 
 <div class="contact-box">
 
 <h3>Contact Information</h3>
 
+
 <div class="contact-item">
+
 <strong>Email</strong>
+
+<a href="mailto:mazharul17051991@gmail.com">
 mazharul17051991@gmail.com
+</a>
+
 </div>
 
+
 <div class="contact-item">
+
 <strong>Mobile</strong>
+
+<a href="tel:01619023024">
 01619-023024
+</a>
+
 </div>
 
+
 <div class="contact-item">
+
+<strong>Mobile</strong>
+
+<a href="tel:01921423009">
+01921-423009
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>WhatsApp</strong>
+
+<a href="https://wa.me/8801921423009">
+Message on WhatsApp
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>SMS</strong>
+
+<a href="sms:01921423009">
+Send SMS
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
 <strong>Location</strong>
+
 Bangladesh
 </div>
 
 </div>
+
 
 <div class="contact-box">
 
@@ -882,18 +1333,23 @@ provided on this page.
 
 <br>
 
-<a class="btn btn-primary" href="mailto:mazharul17051991@gmail.com">
+<a class="btn btn-primary"
+href="mailto:mazharul17051991@gmail.com">
 Send Email
 </a>
 
 </div>
 
+
 </div>
+
 </div>
+
 </section>
 
 
 <!-- FOOTER -->
+
 <footer>
 
 <div class="container">
@@ -906,14 +1362,19 @@ Send Email
 Professional Career Portal
 </p>
 
+
 <div class="footer-links">
+
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#experience">Experience</a>
 <a href="#education">Education</a>
 <a href="#skills">Skills</a>
+<a href="#cv">My CV</a>
+<a href="#achievements">Achievements</a>
 <a href="#jobs">Jobs</a>
 <a href="#contact">Contact</a>
+
 </div>
 
 </div>
