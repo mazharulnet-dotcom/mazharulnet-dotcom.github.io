@@ -719,7 +719,7 @@ footer p{
 .admin-grid input,.admin-grid textarea{width:100%;padding:10px;border:1px solid #cbdbe6;border-radius:6px}
 .admin-grid textarea{min-height:100px}
 .admin-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.cv-print{position:absolute;left:-100000px;top:0;width:794px;background:#fff;padding:35px;color:#24384d}
+.cv-print{position:fixed;left:0;top:0;width:794px;background:#fff;padding:35px;color:#24384d;z-index:99999;display:none}
 .cv-print h1{color:#073663;margin-bottom:3px}.cv-print h2{color:#075a9e;border-bottom:2px solid #dce7ef;padding-bottom:5px;margin-top:22px}.cv-print h3{color:#174c76;margin:10px 0 2px}.cv-print p,.cv-print li{font-size:12px;line-height:1.55}.cv-print ul{padding-left:20px}
 @media(max-width:700px){.detail-box{margin:15px auto;padding:20px}.modern-social a{width:40px;height:40px}}
 
@@ -1621,18 +1621,64 @@ function openDetails(key){const d=detailData[key];if(!d)return;document.getEleme
 function closeDetails(e){if(e && e.target!==document.getElementById('detailModal'))return;document.getElementById('detailModal').style.display='none';document.body.style.overflow='';}
 
 /* PDF: generated from the same CV data shown on the page. */
-function downloadPDF(){
+async function downloadPDF(){
  const obj=document.getElementById('careerObjective');
  const prof=document.getElementById('professionalProfile');
- document.getElementById('pdfObjective').innerText=obj?obj.innerText:'';
- document.getElementById('pdfProfile').innerText=prof?prof.innerText:'';
  const node=document.getElementById('cvPrint');
- if(typeof html2pdf==='undefined'){
-   window.print();
+
+ if(!node){
+   alert('CV section পাওয়া যায়নি।');
    return;
  }
- const opt={margin:0.35,filename:'Mazharul_Islam_CV.pdf',image:{type:'jpeg',quality:0.98},html2canvas:{scale:2,useCORS:true},jsPDF:{unit:'in',format:'a4',orientation:'portrait'}};
- html2pdf().set(opt).from(node).save();
+
+ document.getElementById('pdfObjective').innerText=obj?obj.innerText:'';
+ document.getElementById('pdfProfile').innerText=prof?prof.innerText:'';
+
+ /* Make the CV visible to html2canvas before capturing.
+    The old version placed it far outside the viewport, which could
+    result in a completely white PDF. */
+ node.style.display='block';
+ node.style.position='fixed';
+ node.style.left='0';
+ node.style.top='0';
+ node.style.width='794px';
+ node.style.background='#ffffff';
+ node.style.zIndex='999999';
+
+ if(typeof html2pdf==='undefined'){
+   window.print();
+   setTimeout(function(){node.style.display='none';},300);
+   return;
+ }
+
+ await new Promise(resolve =>
+   requestAnimationFrame(() => requestAnimationFrame(resolve))
+ );
+
+ const opt={
+   margin:0.35,
+   filename:'Mazharul_Islam_CV.pdf',
+   image:{type:'jpeg',quality:0.98},
+   html2canvas:{
+     scale:2,
+     useCORS:true,
+     backgroundColor:'#ffffff',
+     logging:false,
+     scrollX:0,
+     scrollY:0
+   },
+   pagebreak:{mode:['css','legacy']},
+   jsPDF:{unit:'in',format:'a4',orientation:'portrait'}
+ };
+
+ try{
+   await html2pdf().set(opt).from(node).save();
+ }catch(error){
+   console.error('PDF generation error:',error);
+   alert('PDF তৈরি করতে সমস্যা হয়েছে। আবার চেষ্টা করুন।');
+ }finally{
+   node.style.display='none';
+ }
 }
 
 /* PRIVATE EDIT: hidden from normal visitors. Shortcut Ctrl+Alt+E. */
