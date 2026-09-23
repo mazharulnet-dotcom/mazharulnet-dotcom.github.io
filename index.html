@@ -787,7 +787,7 @@ with practical experience across NGO, microfinance, branch operations, accounts,
 
 <div class="buttons">
 
-<button class="btn primary" onclick="downloadPDF()"><i class="fa-solid fa-download"></i> Download CV</button>
+<a class="btn primary" href="Mazharul_Islam_CV.pdf" download="Mazharul_Islam_CV.pdf"><i class="fa-solid fa-download"></i> Download CV</a>
 
 <a href="#contact" class="btn secondary">
 Contact Me
@@ -1319,9 +1319,9 @@ View or download the CV containing the professional,
 educational and experience information.
 </p>
 
-<button class="btn" onclick="downloadPDF()">
+<a class="btn" href="Mazharul_Islam_CV.pdf" download="Mazharul_Islam_CV.pdf">
 ⬇ Download CV PDF
-</button>
+</a>
 
 </div>
 
@@ -1679,6 +1679,16 @@ async function downloadPDF(){
  }finally{
    node.style.display='none';
  }
+}
+
+/* PDF download uses the verified PDF file stored in the repository. */
+function downloadCVFile(){
+  const a=document.createElement('a');
+  a.href='Mazharul_Islam_CV.pdf';
+  a.download='Mazharul_Islam_CV.pdf';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
 }
 
 /* PRIVATE EDIT: hidden from normal visitors. Shortcut Ctrl+Alt+E. */
