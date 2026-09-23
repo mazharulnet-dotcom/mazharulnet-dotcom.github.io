@@ -4,24 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mazharul Islam | Professional Career Portal</title>
+<title>Mazharul Islam | NGO & Microfinance Professional</title>
 
 <meta name="description"
-content="Mazharul Islam - NGO & Microfinance Professional, Branch Management, Microfinance Operations and Team Leadership.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+content="Mazharul Islam - NGO and Microfinance Professional, Branch Management, Team Leadership and Career Profile">
 
 <style>
-
-/* =========================================================
-   GLOBAL
-========================================================= */
 
 *{
     margin:0;
@@ -34,14 +22,15 @@ html{
 }
 
 body{
-    font-family:'Poppins',Arial,sans-serif;
-    background:#f5f9fd;
-    color:#17345b;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f8fc;
+    color:#17345f;
     line-height:1.6;
 }
 
 a{
     text-decoration:none;
+    color:inherit;
 }
 
 img{
@@ -49,249 +38,193 @@ img{
     display:block;
 }
 
-.container{
-    width:92%;
-    max-width:1180px;
-    margin:auto;
-}
-
-/* =========================================================
+/* =========================
    HEADER
-========================================================= */
+========================= */
 
-header{
+.header{
     position:sticky;
     top:0;
     z-index:1000;
-    background:linear-gradient(90deg,#06234b,#0b3b73,#06234b);
-    box-shadow:0 3px 15px rgba(0,0,0,.18);
+    background:#082b57;
+    color:white;
+    box-shadow:0 2px 12px rgba(0,0,0,.18);
 }
 
 .header-inner{
-    min-height:68px;
+    max-width:1400px;
+    margin:auto;
+    padding:10px 35px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:20px;
 }
 
 .brand{
     display:flex;
     align-items:center;
     gap:12px;
-    color:white;
-    min-width:250px;
 }
 
-.brand-photo{
+.brand-logo{
     width:48px;
     height:48px;
     border-radius:50%;
-    overflow:hidden;
-    background:#1680e8;
-    border:2px solid rgba(255,255,255,.8);
+    background:#ffffff;
     display:flex;
     align-items:center;
     justify-content:center;
-    flex-shrink:0;
+    color:#1464b8;
+    font-size:25px;
+    font-weight:bold;
+    border:3px solid #2fa9ff;
 }
 
-.brand-photo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.brand-photo span{
-    color:white;
-    font-weight:700;
-    font-size:16px;
-}
-
-.brand-text h1{
-    font-size:20px;
-    line-height:1.1;
-    font-weight:700;
+.brand-text h2{
+    font-size:18px;
+    line-height:1.2;
 }
 
 .brand-text p{
-    font-size:11px;
+    font-size:12px;
     color:#dcecff;
-    margin-top:2px;
 }
 
 .nav{
     display:flex;
     align-items:center;
-    justify-content:flex-end;
-    gap:4px;
-    flex-wrap:wrap;
+    gap:5px;
 }
 
 .nav a{
-    color:#fff;
-    font-size:12px;
-    font-weight:500;
-    padding:24px 10px 20px;
-    border-bottom:3px solid transparent;
+    padding:10px 13px;
+    border-radius:6px;
+    font-size:14px;
+    color:white;
     transition:.25s;
-    white-space:nowrap;
 }
 
-.nav a i{
-    margin-right:5px;
+.nav a:hover{
+    background:#168be5;
 }
 
-.nav a:hover,
-.nav a.active{
-    color:#fff;
-    border-bottom-color:#19a9ff;
-    background:rgba(255,255,255,.05);
+.menu-btn{
+    display:none;
+    border:0;
+    background:#168be5;
+    color:white;
+    padding:8px 12px;
+    border-radius:6px;
+    font-size:22px;
+    cursor:pointer;
 }
 
-/* =========================================================
+/* =========================
    HERO
-========================================================= */
+========================= */
 
 .hero{
-    position:relative;
-    min-height:355px;
-    overflow:hidden;
+    min-height:430px;
     background:
         linear-gradient(
             90deg,
-            rgba(232,246,255,.96) 0%,
-            rgba(244,250,255,.88) 48%,
-            rgba(220,239,251,.82) 100%
-        );
+            rgba(255,255,255,.95) 0%,
+            rgba(255,255,255,.88) 48%,
+            rgba(255,255,255,.68) 100%
+        ),
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2000&q=85")
+        center/cover;
+    position:relative;
+    overflow:hidden;
 }
 
-.hero:before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:
-        radial-gradient(
-            ellipse at 20% 100%,
-            #78b8dc 0,
-            #b9d9ea 27%,
-            transparent 55%
-        ),
-        radial-gradient(
-            ellipse at 85% 90%,
-            #76afd0 0,
-            #d5eaf4 30%,
-            transparent 58%
-        ),
-        linear-gradient(
-            180deg,
-            #e8f6ff 0%,
-            #c8e1ee 55%,
-            #87bdd8 100%
-        );
-    opacity:.95;
+.hero-inner{
+    max-width:1400px;
+    margin:auto;
+    min-height:430px;
+    padding:25px 45px;
+    display:grid;
+    grid-template-columns:310px 1fr 330px;
+    gap:35px;
+    align-items:center;
 }
 
-.hero:after{
-    content:"";
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:-1px;
-    height:125px;
-    background:
-        linear-gradient(
-            165deg,
-            transparent 0 22%,
-            rgba(61,132,164,.35) 23% 30%,
-            transparent 31% 100%
-        ),
-        linear-gradient(
-            15deg,
-            transparent 0 38%,
-            rgba(50,125,155,.32) 39% 48%,
-            transparent 49% 100%
-        );
-    opacity:.7;
+.profile-photo{
+    width:285px;
+    height:350px;
+    object-fit:cover;
+    object-position:center top;
+    border-radius:12px 12px 0 0;
+    box-shadow:0 10px 30px rgba(0,0,0,.22);
+    background:#dcecff;
+}
+
+.photo-placeholder{
+    width:285px;
+    height:350px;
+    border-radius:12px;
+    background:linear-gradient(145deg,#eaf5ff,#cfe6fa);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    color:#1568b5;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    text-align:center;
+    padding:20px;
+}
+
+.photo-placeholder .person-icon{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#1976d2;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:55px;
+    margin-bottom:18px;
 }
 
 .hero-content{
-    position:relative;
-    z-index:2;
-    display:grid;
-    grid-template-columns:330px 1fr 300px;
-    gap:30px;
-    align-items:center;
-    min-height:355px;
-}
-
-.hero-photo{
-    height:355px;
-    display:flex;
-    align-items:flex-end;
-    justify-content:center;
-}
-
-.hero-photo img{
-    width:100%;
-    max-width:330px;
-    height:355px;
-    object-fit:cover;
-    object-position:center top;
-    filter:drop-shadow(0 10px 20px rgba(0,0,0,.15));
-}
-
-.hero-photo .photo-placeholder{
-    width:100%;
-    height:355px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:90px;
-    font-weight:700;
-    color:#fff;
-    background:linear-gradient(135deg,#0d4f91,#1386db);
-}
-
-/* Hero text */
-
-.hero-text{
-    padding:30px 0;
+    padding:10px;
 }
 
 .hero-small{
-    font-size:19px;
-    color:#092c55;
-    font-weight:500;
-}
-
-.hero-text h2{
-    font-size:42px;
-    line-height:1.15;
-    color:#082c59;
-    margin:2px 0 4px;
-    font-weight:800;
+    font-size:22px;
+    color:#173c6c;
+    margin-bottom:3px;
 }
 
 .hero-title{
-    font-size:21px;
-    font-weight:700;
-    color:#0969bd;
-    margin-bottom:10px;
+    font-size:52px;
+    line-height:1.05;
+    color:#092d58;
+    font-weight:800;
+}
+
+.hero-title span{
+    color:#0875cf;
+}
+
+.hero-subtitle{
+    color:#086cc0;
+    font-size:22px;
+    font-weight:bold;
+    margin:12px 0;
 }
 
 .hero-description{
-    max-width:570px;
-    font-size:13px;
-    color:#274766;
-    line-height:1.7;
+    font-size:16px;
+    max-width:650px;
+    color:#29466b;
 }
 
 .hero-buttons{
     display:flex;
     gap:12px;
-    margin-top:17px;
-    flex-wrap:wrap;
+    margin-top:22px;
 }
 
 .btn{
@@ -299,738 +232,573 @@ header{
     align-items:center;
     justify-content:center;
     gap:8px;
-    padding:10px 22px;
+    padding:11px 22px;
     border-radius:5px;
-    font-size:13px;
-    font-weight:600;
-    transition:.25s;
+    font-weight:bold;
     cursor:pointer;
+    border:2px solid transparent;
+    transition:.25s;
 }
 
 .btn-primary{
-    background:#087ce1;
+    background:#087ee3;
     color:white;
-    border:1px solid #087ce1;
-    box-shadow:0 5px 12px rgba(8,124,225,.2);
 }
 
 .btn-primary:hover{
-    background:#0568bf;
+    background:#075fae;
 }
 
 .btn-outline{
-    background:rgba(255,255,255,.65);
-    color:#0871ca;
-    border:2px solid #087ce1;
+    border-color:#087ee3;
+    color:#0871c9;
+    background:white;
 }
 
 .btn-outline:hover{
-    background:#087ce1;
+    background:#087ee3;
     color:white;
 }
 
-/* Hero info */
-
 .hero-info{
-    background:rgba(255,255,255,.62);
-    border-radius:10px;
-    padding:18px 20px;
-    box-shadow:0 5px 20px rgba(0,50,100,.08);
-    backdrop-filter:blur(4px);
+    background:rgba(255,255,255,.84);
+    backdrop-filter:blur(5px);
+    border-radius:14px;
+    padding:24px;
+    box-shadow:0 5px 25px rgba(0,0,0,.10);
 }
 
 .info-item{
     display:flex;
-    gap:13px;
     align-items:flex-start;
-    margin-bottom:14px;
-}
-
-.info-item:last-child{
-    margin-bottom:8px;
+    gap:14px;
+    margin-bottom:18px;
 }
 
 .info-icon{
-    width:31px;
-    height:31px;
-    border-radius:5px;
-    background:#0874c9;
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-shrink:0;
-}
-
-.info-item:nth-child(2) .info-icon{
-    background:#12a35d;
-}
-
-.info-item:nth-child(3) .info-icon{
-    background:#0b76c9;
-}
-
-.info-item:nth-child(4) .info-icon{
-    background:#116dbb;
-}
-
-.info-text strong{
-    display:block;
-    font-size:11px;
-    color:#07519a;
-}
-
-.info-text span{
-    display:block;
-    font-size:11px;
-    color:#344d66;
-    word-break:break-word;
-}
-
-.socials{
-    display:flex;
-    gap:10px;
-    margin-top:12px;
-}
-
-.socials a{
-    width:30px;
-    height:30px;
+    width:34px;
+    min-width:34px;
+    height:34px;
     border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    background:#0877ce;
     color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:17px;
+}
+
+.info-item strong{
+    display:block;
+    color:#07569b;
     font-size:13px;
-    transition:.25s;
 }
 
-.socials a:hover{
-    transform:translateY(-3px);
+.info-item span{
+    font-size:13px;
+    color:#415b78;
 }
 
-.facebook{
-    background:#1877f2;
+.social{
+    display:flex;
+    gap:9px;
+    margin-top:8px;
 }
 
-.linkedin{
-    background:#0a66c2;
+.social a{
+    width:34px;
+    height:34px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    border-radius:50%;
+    background:#1464aa;
+    font-weight:bold;
 }
 
-.youtube{
-    background:#ff0000;
+.social a:nth-child(2){
+    background:#0877b5;
 }
 
-.whatsapp{
-    background:#25d366;
+.social a:nth-child(3){
+    background:#e31d2b;
 }
 
-/* =========================================================
-   SHORTCUTS
-========================================================= */
-
-.shortcuts{
-    background:#fff;
-    padding:20px 0;
-    border-bottom:1px solid #e3edf5;
+.social a:nth-child(4){
+    background:#333;
 }
 
-.shortcut-grid{
+/* =========================
+   QUICK MENU
+========================= */
+
+.quick-menu{
+    max-width:1400px;
+    margin:0 auto;
+    padding:18px 35px;
+}
+
+.quick-grid{
     display:grid;
     grid-template-columns:repeat(8,1fr);
-    border:1px solid #e0eaf2;
-    border-radius:7px;
+    background:white;
+    border:1px solid #dbe7f1;
+    border-radius:8px;
     overflow:hidden;
-    box-shadow:0 3px 12px rgba(0,0,0,.03);
+    box-shadow:0 2px 12px rgba(0,0,0,.05);
 }
 
-.shortcut{
+.quick-item{
     min-height:115px;
     display:flex;
     flex-direction:column;
-    align-items:center;
     justify-content:center;
+    align-items:center;
     gap:8px;
-    border-right:1px solid #e5edf4;
-    background:#fff;
-    color:#16385f;
+    border-right:1px solid #e1e9f0;
     transition:.25s;
 }
 
-.shortcut:last-child{
-    border-right:none;
+.quick-item:last-child{
+    border-right:0;
 }
 
-.shortcut:hover{
-    background:#f5fbff;
+.quick-item:hover{
+    background:#f0f8ff;
     transform:translateY(-2px);
 }
 
-.shortcut-icon{
-    width:58px;
-    height:58px;
+.quick-icon{
+    width:52px;
+    height:52px;
     border-radius:50%;
     display:flex;
-    align-items:center;
     justify-content:center;
-    color:#fff;
-    font-size:21px;
+    align-items:center;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
 }
 
-.shortcut span{
-    font-size:12px;
-    font-weight:600;
+.blue{background:#1478d1;}
+.green{background:#16a66a;}
+.purple{background:#6637bd;}
+.orange{background:#f39a18;}
+.teal{background:#159b9c;}
+.red{background:#ef343e;}
+
+.quick-item span{
+    font-weight:bold;
+    font-size:14px;
+    color:#163b69;
     text-align:center;
 }
 
-.s-blue{
-    background:#087ce1;
-}
-
-.s-green{
-    background:#13aa63;
-}
-
-.s-purple{
-    background:#6338bb;
-}
-
-.s-orange{
-    background:#ff9d16;
-}
-
-.s-teal{
-    background:#079d9d;
-}
-
-.s-red{
-    background:#ef3340;
-}
-
-.s-violet{
-    background:#7041c5;
-}
-
-.s-cyan{
-    background:#10a7cf;
-}
-
-/* =========================================================
+/* =========================
    MAIN
-========================================================= */
+========================= */
 
-main{
-    padding:22px 0 30px;
-    background:
-        linear-gradient(
-            180deg,
-            #f7fbfe 0%,
-            #edf7fc 100%
-        );
+.container{
+    max-width:1400px;
+    margin:auto;
+    padding:0 35px 25px;
+}
+
+.section{
+    margin-top:25px;
 }
 
 .section-grid{
     display:grid;
-    grid-template-columns:2fr 1.1fr;
-    gap:12px;
+    grid-template-columns:2fr 1fr;
+    gap:18px;
 }
 
 .card{
-    background:#fff;
-    border:1px solid #e0ebf3;
-    border-radius:7px;
-    box-shadow:0 4px 14px rgba(0,60,100,.04);
+    background:white;
+    border:1px solid #dbe6ef;
+    border-radius:8px;
+    padding:24px;
+    box-shadow:0 2px 10px rgba(0,0,0,.04);
 }
 
-.card-header{
+.card-title{
     display:flex;
     align-items:center;
-    gap:12px;
-    padding:15px 18px 8px;
-}
-
-.card-header i{
-    color:#0875c7;
+    gap:10px;
     font-size:22px;
+    color:#123c70;
+    margin-bottom:17px;
 }
 
-.card-header h3{
-    color:#082e5c;
-    font-size:20px;
+.card-title-icon{
+    color:#0874c7;
 }
-
-.card-body{
-    padding:0 18px 18px;
-}
-
-/* About */
 
 .about-layout{
     display:grid;
-    grid-template-columns:1.25fr .9fr;
+    grid-template-columns:1.5fr 1fr;
     gap:25px;
 }
 
 .about-text{
-    font-size:12px;
-    color:#425b73;
-    line-height:1.8;
+    color:#405875;
+    font-size:15px;
+}
+
+.about-text p{
+    margin-bottom:12px;
 }
 
 .read-more{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    margin-top:8px;
-    color:#0878d4;
-    font-size:12px;
-    font-weight:600;
+    color:#0878ce;
+    font-weight:bold;
 }
 
-.profile-details{
-    border-left:1px solid #e5edf3;
-    padding-left:20px;
+.details{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
 }
 
 .detail-row{
-    display:flex;
-    gap:12px;
-    margin-bottom:9px;
-}
-
-.detail-row i{
-    width:18px;
-    color:#0875c7;
-    margin-top:3px;
+    display:grid;
+    grid-template-columns:100px 1fr;
+    gap:8px;
+    font-size:14px;
 }
 
 .detail-row strong{
-    display:block;
-    color:#07539a;
-    font-size:11px;
+    color:#0b5798;
 }
 
-.detail-row span{
-    display:block;
-    color:#425b73;
-    font-size:11px;
-}
-
-/* Skills */
+/* =========================
+   SKILLS
+========================= */
 
 .skill{
-    margin-bottom:11px;
-}
-
-.skill:last-child{
-    margin-bottom:0;
+    margin-bottom:18px;
 }
 
 .skill-head{
     display:flex;
     justify-content:space-between;
-    font-size:11px;
-    font-weight:600;
-    color:#29445f;
-    margin-bottom:4px;
+    margin-bottom:5px;
+    font-size:14px;
+    font-weight:bold;
 }
 
-.skill-track{
-    height:7px;
-    background:#e7eef5;
+.progress{
+    height:10px;
+    background:#e3edf5;
     border-radius:20px;
     overflow:hidden;
 }
 
-.skill-bar{
+.progress span{
+    display:block;
     height:100%;
     border-radius:20px;
 }
 
-.skill-blue{
-    width:90%;
-    background:#087ce1;
+.skill:nth-child(2) .progress span{width:90%;background:#087ee0;}
+.skill:nth-child(3) .progress span{width:85%;background:#13a66c;}
+.skill:nth-child(4) .progress span{width:80%;background:#f39a17;}
+.skill:nth-child(5) .progress span{width:90%;background:#753ed0;}
+.skill:nth-child(6) .progress span{width:75%;background:#ed3a43;}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.timeline{
+    position:relative;
+    margin-top:10px;
 }
 
-.skill-green{
-    width:85%;
-    background:#13a566;
+.timeline:before{
+    content:"";
+    position:absolute;
+    left:14px;
+    top:0;
+    bottom:0;
+    width:2px;
+    background:#c9e0f2;
 }
 
-.skill-orange{
-    width:80%;
-    background:#ff9d16;
+.timeline-item{
+    position:relative;
+    padding-left:45px;
+    margin-bottom:24px;
 }
 
-.skill-purple{
-    width:90%;
-    background:#7d3ce0;
+.timeline-dot{
+    position:absolute;
+    left:7px;
+    top:3px;
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:#087ee0;
+    border:3px solid #d9efff;
 }
 
-.skill-red{
-    width:75%;
-    background:#ef3340;
+.timeline-item h3{
+    color:#0b4f8d;
+    font-size:18px;
 }
 
-/* =========================================================
-   JOB SECTION
-========================================================= */
-
-.jobs-card{
-    margin-top:24px;
-    padding:0;
-    background:linear-gradient(100deg,#effcf7,#f7fffc);
+.timeline-item .company{
+    color:#0879ce;
+    font-weight:bold;
 }
 
-.jobs-inner{
+.timeline-item .date{
+    font-size:13px;
+    color:#778da2;
+}
+
+.timeline-item p{
+    font-size:14px;
+    color:#51677e;
+    margin-top:5px;
+}
+
+/* =========================
+   JOBS
+========================= */
+
+.jobs-section{
+    background:linear-gradient(120deg,#f1fff9,#f7fffd);
+}
+
+.jobs-layout{
     display:grid;
-    grid-template-columns:340px 1fr;
+    grid-template-columns:380px 1fr;
     gap:20px;
-    padding:16px;
-}
-
-.jobs-intro h3{
-    display:flex;
     align-items:center;
-    gap:12px;
-    color:#082e5c;
-    font-size:19px;
-    margin-bottom:12px;
 }
 
-.jobs-intro h3 i{
-    color:#10a062;
-    font-size:25px;
+.jobs-intro h2{
+    color:#0a3967;
+    font-size:24px;
+    margin-bottom:10px;
 }
 
 .jobs-intro p{
-    font-size:11px;
-    color:#466075;
-    line-height:1.8;
-    margin-bottom:18px;
+    color:#526b81;
+    font-size:14px;
 }
 
-.btn-green{
-    background:#10a05b;
-    color:white;
-    border:1px solid #10a05b;
-}
-
-.btn-green:hover{
-    background:#087c46;
-}
-
-.job-tools{
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    gap:10px;
-    margin-bottom:8px;
-}
-
-.filter-btn{
-    background:#079653;
-    color:white;
-    border:none;
-    padding:8px 13px;
-    border-radius:5px;
-    font-size:11px;
-    font-weight:600;
-    cursor:pointer;
-}
-
-.job-search{
-    width:220px;
-    height:34px;
-    border:1px solid #d7e3ec;
-    border-radius:5px;
-    background:#fff;
-    padding:0 10px;
-    font-family:inherit;
-    font-size:11px;
-    outline:none;
-}
-
-.job-search:focus{
-    border-color:#087ce1;
-}
-
-.job-table-wrap{
+.job-table-wrapper{
     overflow-x:auto;
-    background:white;
-    border:1px solid #e0e9ef;
-    border-radius:6px;
 }
 
 .job-table{
     width:100%;
     border-collapse:collapse;
-    min-width:650px;
+    background:white;
+    border-radius:8px;
+    overflow:hidden;
 }
 
 .job-table th{
-    background:#edf5fb;
-    color:#0b4177;
-    font-size:10px;
-    padding:9px 10px;
+    background:#eaf3fb;
+    color:#124d82;
+    font-size:13px;
+    padding:11px;
     text-align:left;
 }
 
 .job-table td{
-    border-top:1px solid #e6edf2;
-    padding:8px 10px;
-    font-size:10px;
-    color:#435970;
+    padding:10px;
+    border-bottom:1px solid #e5edf4;
+    font-size:13px;
+    color:#435d77;
 }
 
-.job-title{
-    color:#173d68;
-    font-weight:600;
-}
-
-.job-title i{
-    color:#087ce1;
-    margin-right:7px;
-}
-
-.apply-btn{
-    display:inline-flex;
-    align-items:center;
-    gap:5px;
-    background:#087ce1;
-    color:#fff;
-    padding:5px 10px;
+.apply{
+    background:#087ee0;
+    color:white;
+    padding:6px 12px;
     border-radius:4px;
-    font-size:9px;
-    font-weight:600;
+    font-weight:bold;
+    font-size:12px;
 }
 
-.apply-btn:hover{
-    background:#0568bd;
+.apply:hover{
+    background:#075da7;
 }
 
-/* =========================================================
-   CAREER GOAL
-========================================================= */
+/* =========================
+   EDUCATION
+========================= */
 
-.career-goal{
-    margin-top:12px;
-    background:linear-gradient(90deg,#092d5d,#00835d,#0aab58);
-    color:white;
-    border-radius:7px;
-    padding:12px 30px;
-    display:flex;
-    align-items:center;
-    gap:15px;
-    box-shadow:0 4px 12px rgba(0,80,80,.12);
+.education-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
 }
 
-.goal-icon{
-    width:50px;
-    height:50px;
+.edu-card{
+    background:white;
+    border:1px solid #dce7ef;
+    border-radius:8px;
+    padding:22px;
+    box-shadow:0 2px 10px rgba(0,0,0,.04);
+}
+
+.edu-icon{
+    width:48px;
+    height:48px;
     border-radius:50%;
-    background:#087fe4;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:22px;
-    flex-shrink:0;
-}
-
-.goal-content{
-    flex:1;
-}
-
-.goal-content h3{
-    font-size:16px;
-    margin-bottom:2px;
-}
-
-.goal-content p{
-    font-size:10px;
-    line-height:1.6;
-    opacity:.95;
-}
-
-.goal-btn{
-    border:1px solid rgba(255,255,255,.8);
+    background:#6838bc;
     color:white;
-    padding:7px 15px;
-    border-radius:5px;
-    font-size:10px;
-    font-weight:600;
-    white-space:nowrap;
-}
-
-.goal-btn:hover{
-    background:rgba(255,255,255,.15);
-}
-
-/* =========================================================
-   EXTRA SECTIONS
-========================================================= */
-
-.content-section{
-    margin-top:24px;
-    scroll-margin-top:85px;
-}
-
-.content-section .card{
-    padding:20px;
-}
-
-.section-title{
     display:flex;
+    justify-content:center;
     align-items:center;
-    gap:10px;
-    color:#082e5c;
+    font-size:22px;
     margin-bottom:12px;
 }
 
-.section-title i{
-    color:#0878d4;
+.edu-card h3{
+    color:#174777;
+    font-size:17px;
 }
 
-.section-title h3{
-    font-size:20px;
+.edu-card p{
+    color:#63798f;
+    font-size:14px;
 }
 
-.timeline-item{
-    position:relative;
-    padding:0 0 17px 22px;
-    border-left:2px solid #cfe4f3;
-}
-
-.timeline-item:last-child{
-    padding-bottom:0;
-}
-
-.timeline-item:before{
-    content:"";
-    position:absolute;
-    left:-6px;
-    top:2px;
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    background:#087ce1;
-}
-
-.timeline-item h4{
-    color:#0b4278;
-    font-size:13px;
-}
-
-.timeline-item .date{
-    color:#087ce1;
-    font-size:10px;
-    font-weight:600;
-}
-
-.timeline-item p{
-    color:#51687d;
-    font-size:11px;
-    margin-top:4px;
-}
-
-.education-list{
-    display:grid;
-    gap:12px;
-}
-
-.education-box{
-    padding:12px;
-    border:1px solid #e2ebf2;
-    border-radius:6px;
-    background:#f9fcfe;
-}
-
-.education-box h4{
-    color:#0b4278;
-    font-size:13px;
-}
-
-.education-box p{
-    font-size:10px;
-    color:#587087;
-}
-
-/* Gallery */
+/* =========================
+   GALLERY
+========================= */
 
 .gallery-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:12px;
+    gap:15px;
 }
 
-.gallery-box{
-    min-height:120px;
-    border-radius:7px;
-    background:linear-gradient(135deg,#d9edfb,#f7fbff);
-    border:1px solid #d9e8f2;
+.gallery-item{
+    height:180px;
+    border-radius:8px;
+    overflow:hidden;
+    background:linear-gradient(135deg,#dceeff,#eef7ff);
     display:flex;
     align-items:center;
     justify-content:center;
-    flex-direction:column;
-    color:#0875c7;
-    gap:8px;
+    color:#3972a8;
+    font-weight:bold;
 }
 
-.gallery-box i{
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* =========================
+   CAREER GOAL
+========================= */
+
+.career{
+    margin-top:25px;
+    background:linear-gradient(100deg,#082e59,#087f73,#079b50);
+    color:white;
+    border-radius:8px;
+    padding:22px 35px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.career-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.target-icon{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#138ee7;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     font-size:28px;
 }
 
-.gallery-box span{
-    font-size:11px;
-    font-weight:600;
+.career h2{
+    font-size:20px;
 }
 
-/* Contact */
+.career p{
+    font-size:13px;
+    color:#e2fff8;
+}
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:18px;
+    gap:20px;
 }
 
-.contact-box{
-    padding:15px;
-    border:1px solid #e1ebf2;
-    border-radius:6px;
-    background:#fbfdff;
+.contact-item{
+    display:flex;
+    gap:15px;
+    align-items:center;
+    padding:14px 0;
+    border-bottom:1px solid #e3ebf1;
 }
 
-.contact-box h4{
-    color:#0b4278;
-    font-size:13px;
-    margin-bottom:8px;
+.contact-item:last-child{
+    border-bottom:0;
 }
 
-.contact-line{
+.contact-icon{
+    width:45px;
+    height:45px;
+    min-width:45px;
+    border-radius:50%;
+    background:#0879cf;
+    color:white;
     display:flex;
     align-items:center;
-    gap:10px;
-    margin-bottom:8px;
-    color:#4a6075;
-    font-size:11px;
+    justify-content:center;
 }
 
-.contact-line i{
-    color:#0878d4;
-    width:18px;
+.contact-item h4{
+    color:#0d4d84;
 }
 
-/* =========================================================
+.contact-item p{
+    color:#62768b;
+    font-size:14px;
+}
+
+/* =========================
    FOOTER
-========================================================= */
+========================= */
 
-footer{
-    background:linear-gradient(90deg,#06234b,#082f60,#06234b);
-    color:#fff;
-    padding:15px 0 12px;
+.footer{
+    margin-top:30px;
+    background:#06294f;
+    color:white;
+    padding:25px 35px;
 }
 
-.footer-top{
+.footer-inner{
+    max-width:1400px;
+    margin:auto;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -1040,44 +808,44 @@ footer{
 .footer-brand{
     display:flex;
     align-items:center;
-    gap:9px;
+    gap:12px;
 }
 
-.footer-brand .mini-logo{
-    width:34px;
-    height:34px;
+.footer-brand-logo{
+    width:44px;
+    height:44px;
     border-radius:50%;
-    background:#1680e8;
+    background:white;
+    color:#0874c8;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-weight:700;
-    font-size:12px;
+    font-weight:bold;
 }
 
-.footer-brand h4{
-    font-size:12px;
+.footer-brand h3{
+    font-size:15px;
 }
 
 .footer-brand p{
-    font-size:8px;
-    color:#c9def4;
+    font-size:11px;
+    color:#c8d9ea;
 }
 
 .footer-nav{
     display:flex;
-    gap:10px;
+    gap:12px;
     flex-wrap:wrap;
     justify-content:center;
 }
 
 .footer-nav a{
-    color:#dcecff;
-    font-size:9px;
+    font-size:12px;
+    color:#d4e5f5;
 }
 
 .footer-nav a:hover{
-    color:white;
+    color:#37b6ff;
 }
 
 .footer-social{
@@ -1086,276 +854,218 @@ footer{
 }
 
 .footer-social a{
-    width:28px;
-    height:28px;
+    width:32px;
+    height:32px;
+    background:#116ab2;
     border-radius:50%;
-    background:#1469b7;
-    color:white;
     display:flex;
-    align-items:center;
     justify-content:center;
-    font-size:11px;
+    align-items:center;
+    font-size:13px;
 }
 
-.footer-bottom{
+.copyright{
     text-align:center;
     border-top:1px solid rgba(255,255,255,.12);
-    margin-top:10px;
-    padding-top:9px;
-    font-size:9px;
-    color:#c6d8eb;
+    margin-top:20px;
+    padding-top:15px;
+    font-size:12px;
+    color:#bcd0e3;
 }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
+/* =========================
+   MOBILE
+========================= */
 
-@media(max-width:1050px){
-
-    .nav a{
-        padding-left:6px;
-        padding-right:6px;
-        font-size:10px;
-    }
-
-    .hero-content{
-        grid-template-columns:270px 1fr 260px;
-        gap:18px;
-    }
-
-    .hero-photo img,
-    .hero-photo .photo-placeholder{
-        max-width:270px;
-    }
-
-    .hero-text h2{
-        font-size:34px;
-    }
-
-    .shortcut span{
-        font-size:10px;
-    }
-
-}
-
-@media(max-width:850px){
-
-    header{
-        position:relative;
-    }
+@media(max-width:1100px){
 
     .header-inner{
-        flex-direction:column;
-        padding:12px 0 0;
-        gap:8px;
-    }
-
-    .brand{
-        width:100%;
-        justify-content:center;
+        padding:10px 20px;
     }
 
     .nav{
-        width:100%;
-        justify-content:center;
-        overflow-x:auto;
-        flex-wrap:nowrap;
-        padding-bottom:2px;
+        display:none;
+        position:absolute;
+        top:68px;
+        left:0;
+        right:0;
+        background:#082b57;
+        flex-direction:column;
+        padding:12px;
+    }
+
+    .nav.active{
+        display:flex;
     }
 
     .nav a{
-        padding:9px 8px;
-        font-size:10px;
+        width:100%;
+        text-align:center;
     }
 
-    .hero-content{
-        grid-template-columns:230px 1fr;
-        min-height:330px;
+    .menu-btn{
+        display:block;
     }
 
-    .hero-photo{
-        height:330px;
-    }
-
-    .hero-photo img,
-    .hero-photo .photo-placeholder{
-        height:330px;
-        max-width:230px;
+    .hero-inner{
+        grid-template-columns:250px 1fr;
+        padding:25px;
     }
 
     .hero-info{
-        grid-column:1/-1;
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
-        gap:10px;
+        grid-column:1 / -1;
     }
 
-    .info-item{
-        margin-bottom:0;
-    }
-
-    .socials{
-        grid-column:1/-1;
-    }
-
-    .shortcut-grid{
+    .quick-grid{
         grid-template-columns:repeat(4,1fr);
-    }
-
-    .shortcut:nth-child(4){
-        border-right:none;
     }
 
     .section-grid{
         grid-template-columns:1fr;
     }
 
-    .jobs-inner{
+    .jobs-layout{
         grid-template-columns:1fr;
     }
 
 }
 
-@media(max-width:600px){
+@media(max-width:750px){
 
-    .container{
-        width:94%;
+    .header-inner{
+        padding:9px 15px;
     }
 
-    .hero-content{
-        display:flex;
-        flex-direction:column;
-        align-items:stretch;
-        gap:0;
-        padding-top:15px;
+    .brand-text h2{
+        font-size:16px;
     }
 
-    .hero-photo{
-        height:270px;
-        justify-content:center;
+    .brand-logo{
+        width:40px;
+        height:40px;
     }
 
-    .hero-photo img,
-    .hero-photo .photo-placeholder{
-        width:210px;
-        height:270px;
+    .hero{
+        min-height:auto;
     }
 
-    .hero-text{
-        padding:18px 5px;
+    .hero-inner{
+        grid-template-columns:1fr;
+        padding:25px 18px;
         text-align:center;
     }
 
-    .hero-small{
-        font-size:15px;
-    }
-
-    .hero-text h2{
-        font-size:30px;
+    .profile-photo,
+    .photo-placeholder{
+        width:230px;
+        height:285px;
+        margin:auto;
     }
 
     .hero-title{
-        font-size:17px;
+        font-size:38px;
+    }
+
+    .hero-subtitle{
+        font-size:18px;
     }
 
     .hero-description{
-        font-size:11px;
+        font-size:14px;
     }
 
     .hero-buttons{
         justify-content:center;
+        flex-wrap:wrap;
     }
 
     .hero-info{
-        display:block;
-        margin:0 5px 18px;
+        text-align:left;
     }
 
-    .info-item{
-        margin-bottom:12px;
+    .quick-menu{
+        padding:12px;
     }
 
-    .shortcut-grid{
+    .quick-grid{
         grid-template-columns:repeat(2,1fr);
     }
 
-    .shortcut{
-        border-bottom:1px solid #e5edf4;
+    .quick-item{
+        min-height:100px;
     }
 
-    .shortcut:nth-child(even){
-        border-right:none;
+    .container{
+        padding:0 12px 20px;
     }
 
     .about-layout{
         grid-template-columns:1fr;
     }
 
-    .profile-details{
-        border-left:none;
-        border-top:1px solid #e5edf3;
-        padding-left:0;
-        padding-top:15px;
-    }
-
-    .jobs-inner{
-        padding:10px;
-    }
-
-    .job-tools{
-        justify-content:stretch;
-        flex-direction:column;
-        align-items:stretch;
-    }
-
-    .job-search{
-        width:100%;
+    .education-grid{
+        grid-template-columns:1fr;
     }
 
     .gallery-grid{
         grid-template-columns:repeat(2,1fr);
     }
 
+    .gallery-item{
+        height:140px;
+    }
+
+    .career{
+        padding:20px;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
     .contact-grid{
         grid-template-columns:1fr;
     }
 
-    .career-goal{
-        flex-wrap:wrap;
-        padding:15px;
+    .footer{
+        padding:25px 15px;
     }
 
-    .goal-btn{
-        margin-left:65px;
-    }
-
-    .footer-top{
+    .footer-inner{
         flex-direction:column;
         text-align:center;
     }
 
-    .footer-nav{
-        gap:8px;
-    }
-
 }
 
-/* =========================================================
-   PRINT
-========================================================= */
+@media(max-width:480px){
 
-@media print{
-
-    header,
-    .shortcuts,
-    .hero-buttons,
-    .jobs-card,
-    footer{
-        display:none;
+    .hero-title{
+        font-size:32px;
     }
 
-    body{
-        background:#fff;
+    .hero-small{
+        font-size:18px;
+    }
+
+    .quick-item span{
+        font-size:13px;
+    }
+
+    .quick-icon{
+        width:46px;
+        height:46px;
+        font-size:20px;
+    }
+
+    .card{
+        padding:18px;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .detail-row{
+        grid-template-columns:90px 1fr;
     }
 
 }
@@ -1365,69 +1075,37 @@ footer{
 
 <body>
 
-<!-- =======================================================
+<!-- =========================
      HEADER
-======================================================= -->
+========================= -->
 
-<header>
+<header class="header">
 
-<div class="container header-inner">
+<div class="header-inner">
 
     <a href="#home" class="brand">
 
-        <div class="brand-photo">
-
-            <img src="profile.jpg"
-                 alt="Mazharul Islam"
-                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-
-            <span style="display:none;">MI</span>
-
-        </div>
+        <div class="brand-logo">MI</div>
 
         <div class="brand-text">
-
-            <h1>Mazharul Islam</h1>
-
-            <p>NGO &amp; Microfinance Professional</p>
-
+            <h2>Mazharul Islam</h2>
+            <p>NGO & Microfinance Professional</p>
         </div>
 
     </a>
 
-    <nav class="nav">
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-        <a href="#home" class="active">
-            <i class="fa-solid fa-house"></i> Home
-        </a>
+    <nav class="nav" id="mainNav">
 
-        <a href="#about">
-            <i class="fa-solid fa-user"></i> About Me
-        </a>
-
-        <a href="#experience">
-            <i class="fa-solid fa-briefcase"></i> Experience
-        </a>
-
-        <a href="#education">
-            <i class="fa-solid fa-graduation-cap"></i> Education
-        </a>
-
-        <a href="#skills">
-            <i class="fa-solid fa-code"></i> Skills
-        </a>
-
-        <a href="#jobs">
-            <i class="fa-solid fa-briefcase"></i> Job Opportunities
-        </a>
-
-        <a href="#gallery">
-            <i class="fa-regular fa-image"></i> Gallery
-        </a>
-
-        <a href="#contact">
-            <i class="fa-solid fa-envelope"></i> Contact
-        </a>
+        <a href="#home">⌂ Home</a>
+        <a href="#about">👤 About Me</a>
+        <a href="#experience">💼 Experience</a>
+        <a href="#education">🎓 Education</a>
+        <a href="#skills">⚙ Skills</a>
+        <a href="#jobs">💼 Job Opportunities</a>
+        <a href="#gallery">▣ Gallery</a>
+        <a href="#contact">✉ Contact</a>
 
     </nav>
 
@@ -1436,74 +1114,69 @@ footer{
 </header>
 
 
-<!-- =======================================================
+<!-- =========================
      HERO
-======================================================= -->
+========================= -->
 
 <section class="hero" id="home">
 
-<div class="container hero-content">
+<div class="hero-inner">
 
-    <!-- PROFILE PHOTO -->
+    <div>
 
-    <div class="hero-photo">
+        <!-- নিজের ছবি এখানে profile.jpg নামে রাখুন -->
 
-        <img src="profile.jpg"
-             alt="Mazharul Islam"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <img
+            src="profile.jpg"
+            alt="Mazharul Islam"
+            class="profile-photo"
+            onerror="this.style.display='none';document.getElementById('photoPlaceholder').style.display='flex';"
+        >
 
-        <div class="photo-placeholder" style="display:none;">
-            MI
+        <div class="photo-placeholder" id="photoPlaceholder" style="display:none;">
+
+            <div class="person-icon">👤</div>
+
+            <strong>Mazharul Islam</strong>
+
+            <small>Profile Photo</small>
+
         </div>
 
     </div>
 
 
-    <!-- HERO TEXT -->
-
-    <div class="hero-text">
+    <div class="hero-content">
 
         <div class="hero-small">
             Hello, I'm
         </div>
 
-        <h2>
-            Mazharul Islam
-        </h2>
+        <h1 class="hero-title">
+            Mazharul <span>Islam</span>
+        </h1>
 
-        <div class="hero-title">
-            NGO &amp; Microfinance Professional
+        <div class="hero-subtitle">
+            NGO & Microfinance Professional
         </div>
 
         <p class="hero-description">
 
             A highly committed, result-oriented and dedicated professional
-            with <strong>12 years</strong> of experience in the NGO sector.
-            I am seeking an NGO job position in a dynamic organization
-            that needs an expert who can efficiently and effectively
-            handle various banking needs.
+            with experience in the NGO sector. I am seeking an NGO job
+            position in a dynamic organization where I can contribute my
+            professional skills, experience and leadership abilities.
 
         </p>
 
         <div class="hero-buttons">
 
-            <a href="Mazharul_Islam_CV.pdf"
-               class="btn btn-primary"
-               download>
-
-                <i class="fa-solid fa-download"></i>
-
-                Download CV
-
+            <a href="#cv" class="btn btn-primary">
+                ⬇ Download CV
             </a>
 
-            <a href="#contact"
-               class="btn btn-outline">
-
-                <i class="fa-regular fa-envelope"></i>
-
-                Contact Me
-
+            <a href="#contact" class="btn btn-outline">
+                ✉ Contact Me
             </a>
 
         </div>
@@ -1511,22 +1184,15 @@ footer{
     </div>
 
 
-    <!-- INFORMATION -->
-
     <div class="hero-info">
 
         <div class="info-item">
 
-            <div class="info-icon">
-                <i class="fa-solid fa-location-dot"></i>
-            </div>
+            <div class="info-icon">📍</div>
 
-            <div class="info-text">
-
+            <div>
                 <strong>Location</strong>
-
                 <span>Noakhali, Bangladesh</span>
-
             </div>
 
         </div>
@@ -1534,16 +1200,11 @@ footer{
 
         <div class="info-item">
 
-            <div class="info-icon">
-                <i class="fa-solid fa-briefcase"></i>
-            </div>
+            <div class="info-icon">💼</div>
 
-            <div class="info-text">
-
+            <div>
                 <strong>Experience</strong>
-
                 <span>12+ Years</span>
-
             </div>
 
         </div>
@@ -1551,16 +1212,11 @@ footer{
 
         <div class="info-item">
 
-            <div class="info-icon">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
+            <div class="info-icon">✉</div>
 
-            <div class="info-text">
-
+            <div>
                 <strong>Email</strong>
-
                 <span>mazharul17051991@gmail.com</span>
-
             </div>
 
         </div>
@@ -1568,57 +1224,25 @@ footer{
 
         <div class="info-item">
 
-            <div class="info-icon">
-                <i class="fa-solid fa-phone"></i>
-            </div>
+            <div class="info-icon">☎</div>
 
-            <div class="info-text">
-
+            <div>
                 <strong>Phone</strong>
-
                 <span>01619-023024, 01921-423009</span>
-
             </div>
 
         </div>
 
 
-        <div class="socials">
+        <div class="social">
 
-            <a class="facebook"
-               href="https://www.facebook.com/mazharul0205"
-               target="_blank"
-               title="Facebook">
+            <a href="#" title="Facebook">f</a>
 
-                <i class="fa-brands fa-facebook-f"></i>
+            <a href="#" title="LinkedIn">in</a>
 
-            </a>
+            <a href="#" title="YouTube">▶</a>
 
-            <a class="linkedin"
-               href="#contact"
-               title="LinkedIn">
-
-                <i class="fa-brands fa-linkedin-in"></i>
-
-            </a>
-
-            <a class="youtube"
-               href="https://www.youtube.com/@Pranijagatkids"
-               target="_blank"
-               title="YouTube">
-
-                <i class="fa-brands fa-youtube"></i>
-
-            </a>
-
-            <a class="whatsapp"
-               href="https://wa.me/8801921423009"
-               target="_blank"
-               title="WhatsApp">
-
-                <i class="fa-brands fa-whatsapp"></i>
-
-            </a>
+            <a href="#" title="Other">●</a>
 
         </div>
 
@@ -1629,98 +1253,80 @@ footer{
 </section>
 
 
-<!-- =======================================================
-     SHORTCUTS
-======================================================= -->
+<!-- =========================
+     QUICK MENU
+========================= -->
 
-<section class="shortcuts">
+<section class="quick-menu">
 
-<div class="container">
+<div class="quick-grid">
 
-<div class="shortcut-grid">
+    <a href="#about" class="quick-item">
 
-    <a href="#about" class="shortcut">
-
-        <div class="shortcut-icon s-blue">
-            <i class="fa-solid fa-user"></i>
-        </div>
+        <div class="quick-icon blue">👤</div>
 
         <span>About Me</span>
 
     </a>
 
 
-    <a href="#experience" class="shortcut">
+    <a href="#experience" class="quick-item">
 
-        <div class="shortcut-icon s-green">
-            <i class="fa-solid fa-briefcase"></i>
-        </div>
+        <div class="quick-icon green">💼</div>
 
         <span>Experience</span>
 
     </a>
 
 
-    <a href="#education" class="shortcut">
+    <a href="#education" class="quick-item">
 
-        <div class="shortcut-icon s-purple">
-            <i class="fa-solid fa-graduation-cap"></i>
-        </div>
+        <div class="quick-icon purple">🎓</div>
 
         <span>Education</span>
 
     </a>
 
 
-    <a href="#training" class="shortcut">
+    <a href="#training" class="quick-item">
 
-        <div class="shortcut-icon s-orange">
-            <i class="fa-solid fa-book-open"></i>
-        </div>
+        <div class="quick-icon orange">📖</div>
 
-        <span>Training &amp; Certificate</span>
+        <span>Training & Certificate</span>
 
     </a>
 
 
-    <a href="#skills" class="shortcut">
+    <a href="#skills" class="quick-item">
 
-        <div class="shortcut-icon s-teal">
-            <i class="fa-solid fa-gear"></i>
-        </div>
+        <div class="quick-icon teal">⚙</div>
 
         <span>Skills</span>
 
     </a>
 
 
-    <a href="#jobs" class="shortcut">
+    <a href="#jobs" class="quick-item">
 
-        <div class="shortcut-icon s-red">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+        <div class="quick-icon red">⌕</div>
 
         <span>Job Opportunities</span>
 
     </a>
 
 
-    <a href="#gallery" class="shortcut">
+    <a href="#gallery" class="quick-item">
 
-        <div class="shortcut-icon s-violet">
-            <i class="fa-regular fa-image"></i>
-        </div>
+        <div class="quick-icon purple">▣</div>
 
         <span>Gallery</span>
 
     </a>
 
 
-    <a href="#contact" class="shortcut">
+    <a href="#contact" class="quick-item">
 
-        <div class="shortcut-icon s-cyan">
-            <i class="fa-solid fa-envelope"></i>
-        </div>
+        <div class="quick-icon blue">✉</div>
 
         <span>Contact</span>
 
@@ -1728,127 +1334,70 @@ footer{
 
 </div>
 
-</div>
-
 </section>
 
 
-<!-- =======================================================
-     MAIN
-======================================================= -->
-
-<main>
-
-<div class="container">
+<main class="container">
 
 
-<!-- =======================================================
+<!-- =========================
      ABOUT + SKILLS
-======================================================= -->
+========================= -->
+
+<section class="section" id="about">
 
 <div class="section-grid">
 
+    <div class="card">
 
-<!-- ABOUT -->
-
-<section class="card" id="about">
-
-    <div class="card-header">
-
-        <i class="fa-solid fa-user-gear"></i>
-
-        <h3>About Me</h3>
-
-    </div>
-
-    <div class="card-body">
+        <h2 class="card-title">
+            <span class="card-title-icon">👤</span>
+            About Me
+        </h2>
 
         <div class="about-layout">
 
-            <div>
+            <div class="about-text">
 
-                <p class="about-text">
+                <p>
+                    I am a dedicated and motivated professional with extensive
+                    experience in the NGO sector, particularly in microfinance,
+                    community development and program management.
+                </p>
 
-                    I am a dedicated and motivated professional with
-                    extensive experience in the NGO sector, particularly
-                    in microfinance, community development and program
-                    management. I have strong leadership, communication
-                    and team management skills with a proven ability
-                    to work effectively in diverse and challenging
-                    environments.
-
+                <p>
+                    I have strong leadership, communication and team management
+                    skills with the ability to work effectively in diverse and
+                    challenging environments.
                 </p>
 
                 <a href="#experience" class="read-more">
-
-                    Read More
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
+                    Read More →
                 </a>
 
             </div>
 
 
-            <div class="profile-details">
+            <div class="details">
 
                 <div class="detail-row">
-
-                    <i class="fa-solid fa-user"></i>
-
-                    <div>
-
-                        <strong>Name</strong>
-
-                        <span>Mazharul Islam</span>
-
-                    </div>
-
+                    <strong>Name</strong>
+                    <span>Mazharul Islam</span>
                 </div>
 
-
                 <div class="detail-row">
-
-                    <i class="fa-solid fa-briefcase"></i>
-
-                    <div>
-
-                        <strong>Profession</strong>
-
-                        <span>NGO &amp; Microfinance Professional</span>
-
-                    </div>
-
+                    <strong>Profession</strong>
+                    <span>NGO & Microfinance Professional</span>
                 </div>
 
-
                 <div class="detail-row">
-
-                    <i class="fa-solid fa-business-time"></i>
-
-                    <div>
-
-                        <strong>Experience</strong>
-
-                        <span>12+ Years</span>
-
-                    </div>
-
+                    <strong>Experience</strong>
+                    <span>12+ Years</span>
                 </div>
 
-
                 <div class="detail-row">
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    <div>
-
-                        <strong>Location</strong>
-
-                        <span>Noakhali, Bangladesh</span>
-
-                    </div>
-
+                    <strong>Location</strong>
+                    <span>Noakhali, Bangladesh</span>
                 </div>
 
             </div>
@@ -1857,34 +1406,24 @@ footer{
 
     </div>
 
-</section>
 
+    <div class="card" id="skills">
 
-<!-- SKILLS -->
+        <h2 class="card-title">
+            <span class="card-title-icon">⚙</span>
+            My Skills
+        </h2>
 
-<section class="card" id="skills">
-
-    <div class="card-header">
-
-        <i class="fa-solid fa-gear"></i>
-
-        <h3>My Skills</h3>
-
-    </div>
-
-    <div class="card-body">
 
         <div class="skill">
 
             <div class="skill-head">
-
                 <span>MS Word</span>
                 <span>90%</span>
-
             </div>
 
-            <div class="skill-track">
-                <div class="skill-bar skill-blue"></div>
+            <div class="progress">
+                <span></span>
             </div>
 
         </div>
@@ -1893,14 +1432,12 @@ footer{
         <div class="skill">
 
             <div class="skill-head">
-
                 <span>MS Excel</span>
                 <span>85%</span>
-
             </div>
 
-            <div class="skill-track">
-                <div class="skill-bar skill-green"></div>
+            <div class="progress">
+                <span></span>
             </div>
 
         </div>
@@ -1909,14 +1446,12 @@ footer{
         <div class="skill">
 
             <div class="skill-head">
-
                 <span>MS PowerPoint</span>
                 <span>80%</span>
-
             </div>
 
-            <div class="skill-track">
-                <div class="skill-bar skill-orange"></div>
+            <div class="progress">
+                <span></span>
             </div>
 
         </div>
@@ -1925,14 +1460,12 @@ footer{
         <div class="skill">
 
             <div class="skill-head">
-
                 <span>Internet Browsing</span>
                 <span>90%</span>
-
             </div>
 
-            <div class="skill-track">
-                <div class="skill-bar skill-purple"></div>
+            <div class="progress">
+                <span></span>
             </div>
 
         </div>
@@ -1941,106 +1474,103 @@ footer{
         <div class="skill">
 
             <div class="skill-head">
-
                 <span>Graphic Design</span>
                 <span>75%</span>
-
             </div>
 
-            <div class="skill-track">
-                <div class="skill-bar skill-red"></div>
+            <div class="progress">
+                <span></span>
             </div>
 
         </div>
 
     </div>
 
-</section>
-
 </div>
 
+</section>
 
-<!-- =======================================================
+
+<!-- =========================
      EXPERIENCE
-======================================================= -->
+========================= -->
 
-<section class="content-section" id="experience">
+<section class="section" id="experience">
 
 <div class="card">
 
-    <div class="section-title">
+    <h2 class="card-title">
+        <span class="card-title-icon">💼</span>
+        Professional Experience
+    </h2>
 
-        <i class="fa-solid fa-briefcase"></i>
+    <div class="timeline">
 
-        <h3>Professional Experience</h3>
+        <div class="timeline-item">
 
-    </div>
+            <div class="timeline-dot"></div>
 
+            <h3>Branch Manager</h3>
 
-    <div class="timeline-item">
+            <div class="company">
+                NGO & Microfinance Sector
+            </div>
 
-        <h4>Branch Manager — BASTOB (NGO)</h4>
+            <div class="date">
+                Professional Experience
+            </div>
 
-        <div class="date">
-            22 November 2025 – Present
+            <p>
+                Branch operations, staff supervision, client management,
+                microfinance activities, reporting and overall branch
+                administration.
+            </p>
+
         </div>
 
-        <p>
-            Branch Operations Management, Team Leadership &amp; Supervision,
-            Loan Portfolio Management, Client Relationship &amp; Community
-            Engagement, Business Growth &amp; Development, Compliance &amp;
-            Risk Management, Reporting &amp; Communication.
-        </p>
 
-    </div>
+        <div class="timeline-item">
 
+            <div class="timeline-dot"></div>
 
-    <div class="timeline-item">
+            <h3>Microfinance Professional</h3>
 
-        <h4>Branch Manager — UDDIPAN (NGO)</h4>
+            <div class="company">
+                NGO Sector
+            </div>
 
-        <div class="date">
-            June 2016 – July 2025
+            <div class="date">
+                Professional Experience
+            </div>
+
+            <p>
+                Loan operations, savings management, field activities,
+                customer service, team coordination and program monitoring.
+            </p>
+
         </div>
 
-        <p>
-            Branch operations, team supervision, loan portfolio management,
-            client relationship, business development, compliance,
-            risk management and reporting under Microfinance Program.
-        </p>
 
-    </div>
+        <div class="timeline-item">
 
+            <div class="timeline-dot"></div>
 
-    <div class="timeline-item">
+            <h3>Team Leadership & Operations</h3>
 
-        <h4>First Credit Officer — UDDIPAN</h4>
+            <div class="company">
+                Development Sector
+            </div>
 
-        <div class="date">
-            November 2014 – May 2016
+            <div class="date">
+                Professional Experience
+            </div>
+
+            <p>
+                Team leadership, operational planning, staff development,
+                reporting and achievement of organizational targets.
+            </p>
+
         </div>
-
-        <p>
-            Client identification, group formation, loan processing,
-            disbursement, monitoring, recovery, relationship management
-            and reporting.
-        </p>
-
-    </div>
-
-
-    <div class="timeline-item">
-
-        <h4>Branch Accounts — Delta Life Insurance Company Limited</h4>
-
-        <div class="date">
-            January 2011 – October 2014
-        </div>
-
-        <p>
-            Financial record keeping, premium collection and accounting,
-            claims accounting, financial reporting and analysis.
-        </p>
 
     </div>
 
@@ -2049,67 +1579,54 @@ footer{
 </section>
 
 
-<!-- =======================================================
+<!-- =========================
      EDUCATION
-======================================================= -->
+========================= -->
 
-<section class="content-section" id="education">
+<section class="section" id="education">
 
-<div class="card">
+<h2 class="card-title">
+    <span class="card-title-icon">🎓</span>
+    Education
+</h2>
 
-    <div class="section-title">
+<div class="education-grid">
 
-        <i class="fa-solid fa-graduation-cap"></i>
+    <div class="edu-card">
 
-        <h3>Education</h3>
+        <div class="edu-icon">🎓</div>
+
+        <h3>Academic Qualification</h3>
+
+        <p>
+            Educational information will be displayed here.
+        </p>
 
     </div>
 
 
-    <div class="education-list">
+    <div class="edu-card">
 
-        <div class="education-box">
+        <div class="edu-icon">📚</div>
 
-            <h4>
-                Bachelor of Business Studies (Degree)
-            </h4>
+        <h3>Professional Development</h3>
 
-            <p>
-                National University — Noakhali Govt. College |
-                Accounting | 2011
-            </p>
+        <p>
+            Professional development and learning information.
+        </p>
 
-        </div>
+    </div>
 
 
-        <div class="education-box">
+    <div class="edu-card">
 
-            <h4>
-                Higher Secondary Certificate (HSC)
-            </h4>
+        <div class="edu-icon">🏆</div>
 
-            <p>
-                Sonapur Degree College |
-                Business Studies | 2008 |
-                Cumilla Board | GPA 4.00/5
-            </p>
+        <h3>Additional Qualification</h3>
 
-        </div>
-
-
-        <div class="education-box">
-
-            <h4>
-                Secondary School Certificate (SSC)
-            </h4>
-
-            <p>
-                Brother Andre High School |
-                Business Studies | 2006 |
-                Cumilla Board | GPA 3.88/5
-            </p>
-
-        </div>
+        <p>
+            Additional educational and professional qualifications.
+        </p>
 
     </div>
 
@@ -2118,361 +1635,219 @@ footer{
 </section>
 
 
-<!-- =======================================================
+<!-- =========================
      TRAINING
-======================================================= -->
+========================= -->
 
-<section class="content-section" id="training">
+<section class="section" id="training">
 
 <div class="card">
 
-    <div class="section-title">
+    <h2 class="card-title">
+        <span class="card-title-icon">📖</span>
+        Training & Certificates
+    </h2>
 
-        <i class="fa-solid fa-book-open"></i>
+    <div class="education-grid">
 
-        <h3>Training &amp; Certificate</h3>
+        <div class="edu-card">
+
+            <div class="edu-icon orange">📋</div>
+
+            <h3>Microfinance Training</h3>
+
+            <p>
+                Professional training related to microfinance operations.
+            </p>
+
+        </div>
+
+
+        <div class="edu-card">
+
+            <div class="edu-icon blue">💻</div>
+
+            <h3>Computer Training</h3>
+
+            <p>
+                Computer, MS Office and digital skills.
+            </p>
+
+        </div>
+
+
+        <div class="edu-card">
+
+            <div class="edu-icon green">👥</div>
+
+            <h3>Leadership Training</h3>
+
+            <p>
+                Team management and leadership development.
+            </p>
+
+        </div>
 
     </div>
-
-    <p class="about-text">
-
-        Professional training and certificate information will be
-        added here. This section is prepared so that future training,
-        workshops and certificates can be displayed without changing
-        the Homepage design.
-
-    </p>
 
 </div>
 
 </section>
 
 
-<!-- =======================================================
+<!-- =========================
      JOB OPPORTUNITIES
-======================================================= -->
+========================= -->
 
-<section class="jobs-card content-section" id="jobs">
+<section class="section" id="jobs">
 
-<div class="jobs-inner">
+<div class="card jobs-section">
 
-
-    <!-- INTRO -->
+<div class="jobs-layout">
 
     <div class="jobs-intro">
 
-        <h3>
-
-            <i class="fa-solid fa-briefcase"></i>
-
-            Latest Job Opportunities
-
-        </h3>
-
+        <h2>Latest Job Opportunities</h2>
 
         <p>
-
             Find your dream job from top NGOs and organizations.
             Apply now and take your career to the next level.
-
         </p>
 
+        <br>
 
-        <a href="#jobs-list"
-           class="btn btn-green">
-
-            View All Jobs
-
-            <i class="fa-solid fa-arrow-right"></i>
-
+        <a href="#contact" class="btn btn-primary">
+            View All Jobs →
         </a>
 
     </div>
 
 
-    <!-- JOB TABLE -->
+    <div class="job-table-wrapper">
 
-    <div id="jobs-list">
+        <table class="job-table">
 
-        <div class="job-tools">
+            <thead>
 
-            <button class="filter-btn"
-                    onclick="filterJobs()">
+                <tr>
 
-                <i class="fa-solid fa-filter"></i>
+                    <th>Job Title</th>
+                    <th>Organization</th>
+                    <th>Location</th>
+                    <th>Deadline</th>
+                    <th>Action</th>
 
-                Job Filter
+                </tr>
 
-            </button>
+            </thead>
 
+            <tbody>
 
-            <input
-                type="text"
-                id="jobSearch"
-                class="job-search"
-                placeholder="Search jobs..."
-                onkeyup="searchJobs()">
+                <tr>
 
-            <i class="fa-solid fa-magnifying-glass"
-               style="margin-left:-30px;color:#0b477d;">
-            </i>
+                    <td>Program Officer</td>
+                    <td>BRAC</td>
+                    <td>Noakhali</td>
+                    <td>Check Website</td>
 
-        </div>
+                    <td>
+                        <a href="#" class="apply">
+                            Apply Now →
+                        </a>
+                    </td>
 
+                </tr>
 
-        <div class="job-table-wrap">
 
-            <table class="job-table">
+                <tr>
 
-                <thead>
+                    <td>Field Officer</td>
+                    <td>CARE Bangladesh</td>
+                    <td>Chandpur</td>
+                    <td>Check Website</td>
 
-                    <tr>
+                    <td>
+                        <a href="#" class="apply">
+                            Apply Now →
+                        </a>
+                    </td>
 
-                        <th>Job Title</th>
+                </tr>
 
-                        <th>Organization</th>
 
-                        <th>Location</th>
+                <tr>
 
-                        <th>Deadline</th>
+                    <td>Branch Manager</td>
+                    <td>ASA</td>
+                    <td>Lakshmipur</td>
+                    <td>Check Website</td>
 
-                        <th>Action</th>
+                    <td>
+                        <a href="#" class="apply">
+                            Apply Now →
+                        </a>
+                    </td>
 
-                    </tr>
+                </tr>
 
-                </thead>
 
+                <tr>
 
-                <tbody id="jobTableBody">
+                    <td>Accounts Officer</td>
+                    <td>Development Organization</td>
+                    <td>Noakhali</td>
+                    <td>Check Website</td>
 
-                    <tr>
+                    <td>
+                        <a href="#" class="apply">
+                            Apply Now →
+                        </a>
+                    </td>
 
-                        <td class="job-title">
+                </tr>
 
-                            <i class="fa-solid fa-briefcase"></i>
+            </tbody>
 
-                            Program Officer
-
-                        </td>
-
-                        <td>BRAC</td>
-
-                        <td>Noakhali</td>
-
-                        <td>15 Dec 2025</td>
-
-                        <td>
-
-                            <a href="#contact"
-                               class="apply-btn">
-
-                                Apply Now
-                                <i class="fa-solid fa-arrow-right"></i>
-
-                            </a>
-
-                        </td>
-
-                    </tr>
-
-
-                    <tr>
-
-                        <td class="job-title">
-
-                            <i class="fa-solid fa-briefcase"></i>
-
-                            Field Officer
-
-                        </td>
-
-                        <td>CARE Bangladesh</td>
-
-                        <td>Chandpur</td>
-
-                        <td>20 Dec 2025</td>
-
-                        <td>
-
-                            <a href="#contact"
-                               class="apply-btn">
-
-                                Apply Now
-                                <i class="fa-solid fa-arrow-right"></i>
-
-                            </a>
-
-                        </td>
-
-                    </tr>
-
-
-                    <tr>
-
-                        <td class="job-title">
-
-                            <i class="fa-solid fa-briefcase"></i>
-
-                            Branch Manager
-
-                        </td>
-
-                        <td>ASA</td>
-
-                        <td>Lakshmipur</td>
-
-                        <td>25 Dec 2025</td>
-
-                        <td>
-
-                            <a href="#contact"
-                               class="apply-btn">
-
-                                Apply Now
-                                <i class="fa-solid fa-arrow-right"></i>
-
-                            </a>
-
-                        </td>
-
-                    </tr>
-
-
-                    <tr>
-
-                        <td class="job-title">
-
-                            <i class="fa-solid fa-briefcase"></i>
-
-                            Accounts Officer
-
-                        </td>
-
-                        <td>World Vision</td>
-
-                        <td>Noakhali</td>
-
-                        <td>30 Dec 2025</td>
-
-                        <td>
-
-                            <a href="#contact"
-                               class="apply-btn">
-
-                                Apply Now
-                                <i class="fa-solid fa-arrow-right"></i>
-
-                            </a>
-
-                        </td>
-
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </div>
+        </table>
 
     </div>
+
+</div>
 
 </div>
 
 </section>
 
 
-<!-- =======================================================
-     CAREER GOAL
-======================================================= -->
-
-<section class="career-goal">
-
-    <div class="goal-icon">
-
-        <i class="fa-solid fa-bullseye"></i>
-
-    </div>
-
-
-    <div class="goal-content">
-
-        <h3>My Career Goal</h3>
-
-        <p>
-
-            To contribute to the development sector by using my skills,
-            experience and knowledge for creating a positive impact in
-            the community and achieving sustainable development.
-
-        </p>
-
-    </div>
-
-
-    <a href="#contact"
-       class="goal-btn">
-
-        Get In Touch
-
-        <i class="fa-solid fa-arrow-right"></i>
-
-    </a>
-
-</section>
-
-
-<!-- =======================================================
+<!-- =========================
      GALLERY
-======================================================= -->
+========================= -->
 
-<section class="content-section" id="gallery">
+<section class="section" id="gallery">
 
 <div class="card">
 
-    <div class="section-title">
-
-        <i class="fa-regular fa-image"></i>
-
-        <h3>Professional Gallery</h3>
-
-    </div>
-
+    <h2 class="card-title">
+        <span class="card-title-icon">▣</span>
+        Gallery
+    </h2>
 
     <div class="gallery-grid">
 
-        <div class="gallery-box">
-
-            <i class="fa-solid fa-image"></i>
-
-            <span>Professional Photo</span>
-
+        <div class="gallery-item">
+            Gallery Image 01
         </div>
 
-
-        <div class="gallery-box">
-
-            <i class="fa-solid fa-users"></i>
-
-            <span>Team Activity</span>
-
+        <div class="gallery-item">
+            Gallery Image 02
         </div>
 
-
-        <div class="gallery-box">
-
-            <i class="fa-solid fa-building"></i>
-
-            <span>Professional Event</span>
-
+        <div class="gallery-item">
+            Gallery Image 03
         </div>
 
-
-        <div class="gallery-box">
-
-            <i class="fa-solid fa-certificate"></i>
-
-            <span>Certificate</span>
-
+        <div class="gallery-item">
+            Gallery Image 04
         </div>
 
     </div>
@@ -2482,113 +1857,121 @@ footer{
 </section>
 
 
-<!-- =======================================================
-     CONTACT
-======================================================= -->
+<!-- =========================
+     CV
+========================= -->
 
-<section class="content-section" id="contact">
+<section class="section" id="cv">
 
 <div class="card">
 
-    <div class="section-title">
+    <h2 class="card-title">
+        <span class="card-title-icon">📄</span>
+        My CV
+    </h2>
 
-        <i class="fa-solid fa-envelope"></i>
+    <p style="color:#5b7086;margin-bottom:15px;">
 
-        <h3>Contact Me</h3>
+        Download my professional CV for detailed information about
+        education, experience, skills and career background.
 
-    </div>
+    </p>
+
+    <a href="cv.pdf" download class="btn btn-primary">
+        ⬇ Download Professional CV
+    </a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section" id="contact">
+
+<div class="card">
+
+    <h2 class="card-title">
+        <span class="card-title-icon">✉</span>
+        Contact Me
+    </h2>
 
 
     <div class="contact-grid">
 
+        <div>
 
-        <div class="contact-box">
+            <div class="contact-item">
 
-            <h4>Contact Information</h4>
+                <div class="contact-icon">✉</div>
 
+                <div>
 
-            <div class="contact-line">
+                    <h4>Email</h4>
 
-                <i class="fa-solid fa-envelope"></i>
+                    <p>
+                        mazharul17051991@gmail.com
+                    </p>
 
-                <span>
-                    mazharul17051991@gmail.com
-                </span>
-
-            </div>
-
-
-            <div class="contact-line">
-
-                <i class="fa-solid fa-phone"></i>
-
-                <span>
-                    01619-023024
-                </span>
+                </div>
 
             </div>
 
 
-            <div class="contact-line">
+            <div class="contact-item">
 
-                <i class="fa-solid fa-phone"></i>
+                <div class="contact-icon">☎</div>
 
-                <span>
-                    01921-423009
-                </span>
+                <div>
 
-            </div>
+                    <h4>Phone</h4>
 
+                    <p>
+                        01619-023024
+                    </p>
 
-            <div class="contact-line">
-
-                <i class="fa-solid fa-location-dot"></i>
-
-                <span>
-                    Noakhali, Bangladesh
-                </span>
+                </div>
 
             </div>
 
         </div>
 
 
-        <div class="contact-box">
+        <div>
 
-            <h4>Quick Contact</h4>
+            <div class="contact-item">
 
+                <div class="contact-icon">📍</div>
 
-            <div class="hero-buttons">
+                <div>
 
-                <a href="tel:01619023024"
-                   class="btn btn-primary">
+                    <h4>Location</h4>
 
-                    <i class="fa-solid fa-phone"></i>
+                    <p>
+                        Noakhali, Bangladesh
+                    </p>
 
-                    Call
+                </div>
 
-                </a>
-
-
-                <a href="sms:01921423009"
-                   class="btn btn-outline">
-
-                    <i class="fa-solid fa-comment-sms"></i>
-
-                    SMS
-
-                </a>
+            </div>
 
 
-                <a href="https://wa.me/8801921423009"
-                   target="_blank"
-                   class="btn btn-green">
+            <div class="contact-item">
 
-                    <i class="fa-brands fa-whatsapp"></i>
+                <div class="contact-icon">💼</div>
 
-                    WhatsApp
+                <div>
 
-                </a>
+                    <h4>Profession</h4>
+
+                    <p>
+                        NGO & Microfinance Professional
+                    </p>
+
+                </div>
 
             </div>
 
@@ -2601,234 +1984,142 @@ footer{
 </section>
 
 
-</div>
+<!-- =========================
+     CAREER GOAL
+========================= -->
+
+<section class="career">
+
+    <div class="career-left">
+
+        <div class="target-icon">
+            🎯
+        </div>
+
+        <div>
+
+            <h2>My Career Goal</h2>
+
+            <p>
+                To contribute to the development sector by using my skills,
+                experience and knowledge for creating a positive impact in
+                the community and achieving sustainable development.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <a href="#contact" class="btn btn-outline"
+       style="background:transparent;color:white;border-color:white;">
+        Get In Touch →
+    </a>
+
+</section>
 
 </main>
 
 
-<!-- =======================================================
+<!-- =========================
      FOOTER
-======================================================= -->
+========================= -->
 
-<footer>
+<footer class="footer">
 
-<div class="container">
+<div class="footer-inner">
 
+    <div class="footer-brand">
 
-    <div class="footer-top">
-
-
-        <div class="footer-brand">
-
-            <div class="mini-logo">
-                MI
-            </div>
-
-            <div>
-
-                <h4>Mazharul Islam</h4>
-
-                <p>NGO &amp; Microfinance Professional</p>
-
-            </div>
-
+        <div class="footer-brand-logo">
+            MI
         </div>
 
+        <div>
 
-        <div class="footer-nav">
+            <h3>Mazharul Islam</h3>
 
-            <a href="#home">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#jobs">Job Opportunities</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-
-        </div>
-
-
-        <div class="footer-social">
-
-            <a href="https://www.facebook.com/mazharul0205"
-               target="_blank">
-
-                <i class="fa-brands fa-facebook-f"></i>
-
-            </a>
-
-            <a href="#contact">
-
-                <i class="fa-brands fa-linkedin-in"></i>
-
-            </a>
-
-            <a href="https://www.youtube.com/@Pranijagatkids"
-               target="_blank">
-
-                <i class="fa-brands fa-youtube"></i>
-
-            </a>
-
-            <a href="https://wa.me/8801921423009"
-               target="_blank">
-
-                <i class="fa-brands fa-whatsapp"></i>
-
-            </a>
+            <p>
+                NGO & Microfinance Professional
+            </p>
 
         </div>
 
     </div>
 
 
-    <div class="footer-bottom">
+    <div class="footer-nav">
 
-        © 2025 Mazharul Islam. All Rights Reserved.
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
 
     </div>
+
+
+    <div class="footer-social">
+
+        <a href="#">f</a>
+        <a href="#">in</a>
+        <a href="#">▶</a>
+        <a href="#">●</a>
+
+    </div>
+
+</div>
+
+
+<div class="copyright">
+
+    © 2026 Mazharul Islam. All Rights Reserved.
 
 </div>
 
 </footer>
 
 
-<!-- =======================================================
-     JAVASCRIPT
-======================================================= -->
-
 <script>
 
-/* =========================================================
-   JOB SEARCH
-========================================================= */
+function toggleMenu(){
 
-function searchJobs(){
+    const nav = document.getElementById("mainNav");
 
-    const input =
-        document.getElementById("jobSearch");
-
-    const filter =
-        input.value.toLowerCase();
-
-    const rows =
-        document.querySelectorAll("#jobTableBody tr");
-
-    rows.forEach(function(row){
-
-        const text =
-            row.innerText.toLowerCase();
-
-        if(text.includes(filter)){
-
-            row.style.display = "";
-
-        }else{
-
-            row.style.display = "none";
-
-        }
-
-    });
+    nav.classList.toggle("active");
 
 }
 
 
-/* =========================================================
-   JOB FILTER
-========================================================= */
+/* মোবাইলে মেনুতে ক্লিক করলে মেনু বন্ধ হবে */
 
-function filterJobs(){
+document.querySelectorAll(".nav a").forEach(function(link){
 
-    const rows =
-        document.querySelectorAll("#jobTableBody tr");
+    link.addEventListener("click",function(){
 
-    let visibleCount = 0;
-
-    rows.forEach(function(row){
-
-        if(row.style.display !== "none"){
-
-            visibleCount++;
-
-        }
-
-    });
-
-    alert(
-        "Job Filter is ready. Advanced job filtering will be connected to the Job Database/Admin Panel in the next stage."
-    );
-
-}
-
-
-/* =========================================================
-   ACTIVE NAVIGATION
-========================================================= */
-
-const sections =
-    document.querySelectorAll(
-        "section[id]"
-    );
-
-const navLinks =
-    document.querySelectorAll(
-        ".nav a"
-    );
-
-window.addEventListener("scroll",function(){
-
-    let current = "home";
-
-    sections.forEach(function(section){
-
-        const sectionTop =
-            section.offsetTop - 120;
-
-        if(window.scrollY >= sectionTop){
-
-            current =
-                section.getAttribute("id");
-
-        }
-
-    });
-
-    navLinks.forEach(function(link){
-
-        link.classList.remove("active");
-
-        if(
-            link.getAttribute("href") ===
-            "#" + current
-        ){
-
-            link.classList.add("active");
-
-        }
+        document.getElementById("mainNav").classList.remove("active");
 
     });
 
 });
 
 
-/* =========================================================
-   SMOOTH LINK
-========================================================= */
+/* Smooth scrolling */
 
-document.querySelectorAll('a[href^="#"]').forEach(function(link){
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
 
-    link.addEventListener("click",function(event){
+    anchor.addEventListener("click",function(e){
 
-        const target =
-            document.querySelector(
-                this.getAttribute("href")
-            );
+        const target = document.querySelector(
+            this.getAttribute("href")
+        );
 
         if(target){
 
-            event.preventDefault();
+            e.preventDefault();
 
             target.scrollIntoView({
                 behavior:"smooth"
